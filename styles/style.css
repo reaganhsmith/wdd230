@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter+Tight:wght@300;500;600&display=swap");
+
+:root {
+  --dark-brown: #71543E;
+  --cream-color: #F9F6E8;
+  --green-color: #9DBF95;
+}
+
+
 html {
   display: flex;
   justify-content: center;
@@ -6,7 +14,7 @@ html {
 }
 
 body {
-  background-color: rgb(252, 247, 253);
+  background-color: var(--cream-color);
 }
 
 h1, h2 {
@@ -20,25 +28,26 @@ p, li {
 ul {
   font-weight: 600;
   padding: 1em;
-  border-top: solid grey 1px;
-  border-bottom: solid grey 1px;
+  border-top: solid var(--green-color) 2px;
+  border-bottom: solid var(--green-color) 2px;
+  
 }
 ul a {
-  color: rgb(159, 112, 224);
+  color: var(--dark-brown);
   font-weight: 500;
 }
-ul :hover {
-  color: rgb(144, 171, 144);
+ul a:hover {
+  color: var(--green-color);
   font-size: 1.5em;
   font-weight: 600;
 }
 
 header {
   display: flex;
-  background-color: rgb(197, 168, 237);
+  background-color: var(--dark-brown);
   padding: 1em;
   border-radius: 1em;
-  box-shadow: 10px 5px 20px gray;
+  box-shadow: 10px 5px 20px #D1C2B0;
 }
 header img {
   height: 16em;
@@ -48,15 +57,12 @@ header h1 {
   align-content: center;
   padding: 1em;
   align-self: center;
+  color: white;
 }
 
-main p {
-  color: rgb(144, 171, 144);
-  font-weight: 300;
-}
 
 footer {
-  background-color: rgb(222, 209, 241);
+  background-color: var(--dark-brown);
   padding: 1em;
   border-radius: 1em;
   display: flex;
@@ -64,7 +70,8 @@ footer {
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  box-shadow: 10px 5px 20px gray;
+  box-shadow: 10px 5px 20px #D1C2B0;
+  color: white;
 }
 
 footer p:nth-of-type(2) {
