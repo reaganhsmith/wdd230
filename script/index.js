@@ -1,10 +1,10 @@
-var copySymbol = 	'&copy;';
+var copySymbol =  '&copy;';
 
 
 document.querySelector("#copy-symbol").innerHTML = copySymbol + " 2023 .:|:. Reagan Houser-Smith";
 
 
-const lastMod = new Date(document.lastModified);
+let lastMod = new Date(document.lastModified);
 var removeTZ = lastMod.toLocaleString();
 
 
