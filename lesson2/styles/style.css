@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500;800&family=Mulish:wght@200;500;700&display=swap');
+
+:root{
+    --paragraph-font: 'Mulish', sans-serif;
+    --header-font: 'Abhaya Libre', serif;
+    --primary-color: #422D38;
+    --secondary-color: #A08B9E;
+    --third-color: #777652;
+}
+
+/*This is will be the section to set the grid */
+
+.main-grid{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+}
+
+
+h1, h2, h3{
+    font-family: var(--header-font);
+}
+p, a{
+    font-family: var(--paragraph-font);
+}
+
+/* images */
+
+section img{
+    height: 55em; 
+    margin-top: 1em; 
+}
+
+/* updates to the header */
+header{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+header h1{
+    font-size: 3em;
+}
+
+header h2{
+    margin-top: -.5em;
+    font-size: 2em;
+}
+
+
+/* Here is the footer section */
+footer{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.2em;
+}
+
+
+/* Here is the options for each section */
+
+a{
+    color: var(--third-color);
+    font-size: 1.3em;
+    font-weight: 200;
+}
+
+a:hover{
+    font-size: 1.4em;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.main-section{
+    padding: 1em;
+    background-color: #EDEDE2;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+h3{
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: .5em .5em 0 0;
+    font-size: 2em;
+    padding: .5em;
+    margin: -.5em;
+}
+
+.main-section p{
+    font-size: 1.5em;
+    margin-top: 1em;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.main-section p:nth-of-type(2){
+    font-weight: 200;
+}
+
