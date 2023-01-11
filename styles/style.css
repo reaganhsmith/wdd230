@@ -11,6 +11,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1em;
 }
 
 body {
@@ -50,7 +51,7 @@ header {
   box-shadow: 10px 5px 20px #D1C2B0;
 }
 header img {
-  height: 16em;
+  height: 13em;
   border-radius: 1em;
 }
 header h1 {
