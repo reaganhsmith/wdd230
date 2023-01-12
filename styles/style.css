@@ -8,10 +8,7 @@
 
 
 html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
+  padding: 1rem;
 }
 
 body {
@@ -28,7 +25,7 @@ p, li {
 
 ul {
   font-weight: 600;
-  padding: 1em;
+  padding: 1rem;
   border-top: solid var(--green-color) 2px;
   border-bottom: solid var(--green-color) 2px;
   
@@ -39,7 +36,7 @@ ul a {
 }
 ul a:hover {
   color: var(--green-color);
-  font-size: 1.5em;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -47,16 +44,17 @@ header {
   display: flex;
   background-color: var(--dark-brown);
   padding: 1em;
-  border-radius: 1em;
+  border-radius: 1rem;
   box-shadow: 10px 5px 20px #D1C2B0;
 }
 header img {
-  height: 13em;
-  border-radius: 1em;
+  height: 13rem;
+  border-radius: 1rem;
+  width: auto;
 }
 header h1 {
   align-content: center;
-  padding: 1em;
+  padding: 1rem;
   align-self: center;
   color: white;
 }
@@ -65,16 +63,15 @@ header h1 {
 footer {
   background-color: var(--dark-brown);
   padding: 1em;
-  border-radius: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border-radius: 1rem;
+  text-align: center;
   font-weight: 500;
   box-shadow: 10px 5px 20px #D1C2B0;
   color: white;
 }
 
-footer p:nth-of-type(2) {
-  margin-top: -2em;
+
+#last-update{
+  color: var(--green-color);
+  font-size: 1.3rem;
 }
