@@ -2,9 +2,8 @@
 
 :root{
     --main-color: #15294C;
-    --second-color: #2A446B;
+    --second-color: #702513;
     --third-color: #e7effa;
-    --gray-color: #dedede;
     --header-font: 'Lora', serif;
     --paragraph-font: 'Open Sans', sans-serif;
 }
@@ -38,23 +37,30 @@ a:hover{
     font-weight: 500;
     font-size: 28px;
     color: var(--second-color);
+    text-decoration: underline;
 }
 
 header img{
     width: 70px;
-
     margin: 5%;
 }
 
-
+h1{
+    margin-top: 2%;
+    font-size: 38px;
+}
 
 /* Footer time */
 footer{background-color: var(--main-color);
-color: var(--third-color);
 padding: 1%;
 text-align: center;
 font-size: 18px;}
 
+footer p{
+    color: var(--third-color);
+}
+
+/* maian section*/
 
 main{
     padding: 2%;
@@ -63,6 +69,7 @@ main{
 
 h1, h2, h3, h4{
     font-family: var(--header-font);
+    color: var(--main-color);
 }
 h2, h3, h4{
     font-weight: 400;
@@ -70,18 +77,21 @@ h2, h3, h4{
 
 p{
     font-family: var(--paragraph-font);
+    color: var(--main-color);
+    font-size: 18px;
 
 }
 
 .personas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10%;
+    gap: 5%;
     
 }
 
 .personas section{
- background-color: var(--third-color);
+ background-color: var(--main-color);
+ border-radius: 2%;
  padding: 5%;
 }
 
@@ -89,3 +99,101 @@ p{
     width: 70%;
 }
 
+.personas p, .personas h3{
+    color: white;
+}
+
+h2, h4{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 24px;
+    color: var(--second-color);
+}
+
+
+.scenarios{
+    display: flex;
+}
+
+.scenarios h3{
+    font-size: 20px;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    color: white;
+    width: 150px;
+    height: 30px;
+    padding: 1%;
+}
+
+.scenarios p{
+    font-size: 16px;
+    margin: 1%;
+}
+
+
+/* Design page table */
+
+  table, td, th {
+    border: 1px solid;
+    font-size: 24px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td{
+    padding: 1%;
+  }
+
+  .header-dp h1{
+   color: var(--main-color);
+   background-color: var(--third-color);
+   padding: 5%;
+  }
+
+  tr a{
+    color: var(--main-color);
+    background-color: var(--third-color);
+    padding: 2%;
+    font-size: 24px;
+  }
+
+.footer-dp p{
+color: var(--third-color);
+background-color: var(--main-color);
+padding: 5%;
+font-size: 18px;
+}
+
+
+/* colors sectiion */
+
+.colors{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.colors p{
+    color: white;
+    width: 100px;
+    height: 100px;
+    padding: 1%;
+}
+
+.colors:nth-of-type(1) p{
+    background-color: var(--main-color);
+}
+
+.colors:nth-of-type(2) p{
+    background-color: var(--second-color);
+}
+
+.colors:nth-of-type(3) p{
+    background-color: var(--third-color);
+    color: var(--main-color);
+}

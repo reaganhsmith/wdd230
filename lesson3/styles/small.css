@@ -1,7 +1,8 @@
 @media only screen and (max-width: 760px){
 
-h1{font-size: 24px;
+header h1{font-size: 24px;
     margin-left: 15%;
+    margin-top: 15%;
 }
 
 header a{
@@ -12,13 +13,11 @@ ul{
     flex-direction: column;
 }
 
-header nav{
-    margin-right: 110%;
-}
 
 body header img{
     width: 65px;
     padding: 5%;
+    margin-top: 50%;
 }
 
 footer p{
@@ -35,7 +34,31 @@ main .personas{
 }
 
 .personas section:nth-last-of-type(1){
-    border: solid 3px red;
     grid-row: 2 / span 1;
 }
+
+
+main .scenarios{
+    flex-direction: column;
+}
+
+h4{
+    margin-top: 10%;
+    text-align: center;
+}
+main .scenarios h3{
+    width: 30px;
+    height: 30px;
+}
+
+main table td{
+    font-size: 14px;
+    padding: 1%;
+}
+
+table h1, table h2{
+    font-size: 24px;
+}
+
+
 }
