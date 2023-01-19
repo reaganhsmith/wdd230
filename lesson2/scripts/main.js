@@ -4,7 +4,8 @@ let lastMod = new Date(document.lastModified);
 var removeTZ = lastMod.toLocaleString();
 
 
-const copySpot = document.querySelector("#copy-symbol");
+const newParagraph = document.createElement("p");
+newParagraph.innerText =`© 2023 | Reagan Houser-Smith | Last Updated: ${removeTZ}`;
 
-copySpot.innerHTML = `${copySymbol} 2023 | Reagan Houser-Smith | Last Updated: ${removeTZ}`;
+document.querySelector('#copy-symbol').appendChild(newParagraph);
 
