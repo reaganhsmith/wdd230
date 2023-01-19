@@ -9,8 +9,9 @@
     header ul{gap: 5%;
     }
 
-    body header img{width: 80px;
 
+    .personas section img{
+        width: 300px;
     }
 
 }

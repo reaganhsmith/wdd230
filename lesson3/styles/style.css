@@ -64,9 +64,28 @@ main{
 h1, h2, h3, h4{
     font-family: var(--header-font);
 }
+h2, h3, h4{
+    font-weight: 400;
+}
 
 p{
     font-family: var(--paragraph-font);
-    text-indent: 5%;
+
+}
+
+.personas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    
+}
+
+.personas section{
+ background-color: var(--third-color);
+ padding: 5%;
+}
+
+.personas img{
+    width: 70%;
 }
 

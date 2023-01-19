@@ -24,4 +24,18 @@ body header img{
 footer p{
     font-size: 14px;
 }
+
+
+
+main .personas{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3%;
+    padding: 3%;
+}
+
+.personas section:nth-last-of-type(1){
+    border: solid 3px red;
+    grid-row: 2 / span 1;
+}
 }
