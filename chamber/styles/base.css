@@ -108,7 +108,7 @@ p, a{
 
 main section{
     background-color: rgb(222, 222, 222);
-    height: 200%;
+    height: 100%;
     margin: 10px;
     border: solid 1px gray;
  
@@ -126,6 +126,8 @@ main section p{
     margin: 5%;
 }
 
+main .join{display: none;}
+
 
 /* Here is the footer*/
 
@@ -137,11 +139,10 @@ footer{
 }
 
 footer .logo{
-height: 100%;
-width: 30%;
 display: block;
 margin-left: auto;
 margin-right: auto;
+width: 120px;
 }
 
 footer h5{
