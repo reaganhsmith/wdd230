@@ -14,6 +14,7 @@
     header{
         grid-template-columns: 1fr 30% 40% 1fr;
     }
+
     nav ul{display: block;
     background-color: transparent;
     display: flex;
@@ -23,10 +24,11 @@
     h1{
         font-size: 38px;
     }
+
+
     nav{
         grid-column: 3;
         grid-row: 1;
-
     }
 
     nav ul li a{
@@ -51,6 +53,6 @@
         margin-left: 50%;
     }
 
-    /*main section*\
+    /*main section*/
 
-}
+    }
