@@ -128,6 +128,10 @@ main section p{
 
 main .join{display: none;}
 
+.spotlight p:nth-child(3){
+    display: none;
+}
+
 
 /* Here is the footer*/
 
@@ -142,7 +146,7 @@ footer .logo{
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 120px;
+width: 60%;
 }
 
 footer h5{
