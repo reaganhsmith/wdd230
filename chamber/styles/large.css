@@ -52,7 +52,9 @@
         grid-column: 4;
         margin-left: 50%;
     }
-
+    header .logo{
+        width: 50%;
+    }
     /*main section*/
 
     main{
