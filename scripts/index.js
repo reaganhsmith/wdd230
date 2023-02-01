@@ -1,4 +1,5 @@
 const date =  new Date().getFullYear();
+const dayOfWeek = new Date().getDay();
 
 
 document.querySelector("#copy-symbol").innerHTML = `&copy;${date} (º__º) Reagan Houser-Smith (º__º) Idaho`;

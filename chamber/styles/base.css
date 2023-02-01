@@ -107,30 +107,11 @@ p, a{
 /* Here is the code for the main section */
 
 main section{
-    background-color: rgb(222, 222, 222);
     height: 100%;
-    margin: 10px;
-    border: solid 1px gray;
- 
-}
-
-main section p{
-    padding: 5%;
-    color: var(--main-color);
-    font-size: 14px;
-}
-
-.spotlight p{
-    border: solid 1px gray;
-    height: 100px;
-    margin: 5%;
+    margin-top: 5%;
 }
 
 main .join{display: none;}
-
-.spotlight p:nth-child(3){
-    display: none;
-}
 
 
 /* Here is the footer*/
@@ -160,4 +141,158 @@ footer .very-bottom{
 }
 footer .very-bottom p:nth-child(2){
     font-weight: 700;
+}
+
+
+/*Adding details to the site*/
+.ctabutton{
+    background-color: var(--main-color);
+    color: white;
+    font-family: var(--paragraph-font);
+    padding: 4%;
+    font-size: 22px;
+    position: relative;
+    margin: 0 0 8% 40%;
+    border-radius: 15px;
+    font-weight: 700;
+    border: none;
+}
+
+.ctabutton:hover{
+    background-color: var(--second-color);
+}
+.cta img{
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.cta h2{
+    padding: 5% 5%;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    color: var(--second-color);
+}
+
+main section:nth-of-type(2){
+    background-color: var(--third-color);
+    padding: 5%;
+    text-align: center;
+    margin-top: 30%;
+}
+
+section h3{
+    margin-top: -5%;
+    font-size: 20px;
+}
+
+main section:nth-of-type(2) a{
+    color: var(--second-color);
+}
+
+/* Ice cream logo and animation*/
+main .creamlogo{
+    height: 8rem;
+    position: absolute;
+    margin: -5% 60% 15% -48%;
+    animation: spin 10s linear infinite; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+/*Weather Section*/
+.weather{
+    padding: 5%;
+    background-color: var(--third-color);
+    margin: 10%;
+}
+
+.innerweather{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 10%;
+    margin-top: -15%;
+}
+
+.weather h2{
+    text-align: center;
+    margin-top: 0;
+}
+
+.weather img{
+    height: 15rem;
+}
+
+.weather h3{
+font-size: 38px;
+}
+
+.weather ul{
+    list-style-type: none;
+    font-family: var(--paragraph-font);
+    font-size: 24px;
+    border-top: solid 2px var(--second-color);
+    padding-top: 5%;
+    margin-top: 0;
+}
+
+
+
+/*News release section class News*/
+
+.news{
+    text-align: center;
+    background-color: var(--third-color);
+    padding: 3%;
+}
+
+.news p{
+    padding: 0 5%;
+}
+
+
+/*Spotlight info class spotlight*/
+
+.spotlight1, .spotlight2{
+    background-color: var(--third-color);
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlight img{
+    height: 15rem;
+}
+
+.spotlight h3{
+    border-bottom: solid 2px var(--main-color);
+    padding-bottom: 5%;
+    width: 80%;
+    text-align: center;
+}
+
+.spotlight{
+    padding: 5%;
+    margin: 5% 0;
+    background-color: var(--main-color);
+}
+
+.spotlight p{
+    margin-top: 0;
+}
+.spotlight3{
+    display: none;
 }

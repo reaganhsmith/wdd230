@@ -12,16 +12,28 @@ main{
     margin: 2rem;
     grid-template-columns: 70% 30%;
 }
+
+/*Spotlight code*/
 .spotlight{
-    display: flex;
     grid-row: 3 / span 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15%;
+    height: 70%;
 }
 
-.spotlight p{
-    width: 100%;
+.spotlight1, .spotlight2{
+    width: 400px;
+    height: 400px;
 }
 
-
+.spotlight img{
+    margin-top: -15%;
+}
+.spotlight2{
+    margin-left: 5%;
+}
 main .join{
     display: block;
 }
