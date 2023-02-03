@@ -24,7 +24,7 @@ header p{
 }
 nav{
     display: grid;
-    grid-template-rows: 205 1fr;  
+    grid-template-rows: 1fr;  
     margin: 1em;
 }
 nav button{
@@ -225,7 +225,9 @@ main .creamlogo{
     gap: 10%;
     margin-top: -15%;
 }
-
+.weather p{
+    display: none;
+}
 .weather h2{
     text-align: center;
     margin-top: 0;
