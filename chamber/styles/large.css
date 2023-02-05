@@ -124,6 +124,8 @@
         margin: 2rem 0;
     }
 
+    .event img{padding-top: 2rem;}
+
     /*WEATHER SECTION*/
     .weather{
         grid-row: 2 / span 1;
