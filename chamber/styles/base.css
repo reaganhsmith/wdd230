@@ -114,23 +114,22 @@ main div p{
 .join{
     display: none;}
 
-.spotlight div:nth-child(3){
-    display: none;
-}
 
 
 /*call to action section*/
 
 .cta{
     margin-top: 2rem;
+    margin-bottom: -8rem;
 }
 .cta img{
     width: 100%;
 }
 
 .cta h2{
-    position: absolute;
-    margin: -60% 0 50% 5%;
+    position: relative;
+    top: -330px;
+    right: -30px;
     font-size: 32px;
 }
 
@@ -138,13 +137,14 @@ main div p{
     border: none;
     background-color: var(--main-color);
     color: white;
-    padding: 5%;
+    padding: 3%;
     font-family: var(--paragraph-font);
     font-size: 20px;
     border-radius: 15px;
-    position: absolute;
-    width: 50%;
-    margin: 40% 20% -10% -60%;
+    position: relative;
+    width: auto;
+    bottom: 215px;
+    right: -220px;
 }
 
 .cta button:hover{
@@ -253,7 +253,7 @@ margin: 3rem;
     text-align: center;
 }
 
-/*spotlight section 1*/
+/*spotlight section*/
 
 .spotlight{
     background-color: var(--main-color);
@@ -261,7 +261,7 @@ margin: 3rem;
     padding: 1rem;
     margin-bottom: 3rem;
 }
-.spotlight1, .spotlight2{
+.spotlight1, .spotlight2, .spotlight3{
     padding: 1rem;
     margin: 2rem;
     background-color: var(--third-color);
@@ -289,7 +289,9 @@ margin: 3rem;
     padding-bottom: 1rem;
 }
 
-/*spotlight section 2*/
+.spotlight3{
+    display: none;
+}
 
 /* Here is the footer*/
 

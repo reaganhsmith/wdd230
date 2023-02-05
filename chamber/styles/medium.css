@@ -29,6 +29,14 @@
 
     .cta h2{
         font-size: 38px;
+        top: -450px;
+    }
+
+    .cta button{
+        bottom: 195px;
+        right: -395px;
+        width: auto;
+        padding: 2%;
     }
 
 
