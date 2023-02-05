@@ -124,7 +124,8 @@
         margin: 2rem 0;
     }
 
-    .event img{padding-top: 2rem;}
+    .event img{padding-top: 2rem;
+   margin-bottom: 3rem;}
 
     /*WEATHER SECTION*/
     .weather{
@@ -151,7 +152,7 @@
         margin-bottom: 2rem;
         margin-top: 0;
     }
-    .news p{
+     .news p, .event p, .join p{
         font-size: 18px;
     }
     /* JOIN US SECTION*/
