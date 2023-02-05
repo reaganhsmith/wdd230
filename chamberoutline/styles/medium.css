@@ -26,22 +26,22 @@
         display: block;
     }
     
-    main section:nth-child(2){
+    .event{
         grid-row: 5 / span 1;
         grid-column: 1 / 1;
     
     }
     
-    main section:nth-child(4){
+    .weather{
         grid-column: 2; 
     }
     
     
-    main section:nth-child(5){
+    .news{
         grid-row: 2;
     }
     
-    main section{
+    main div{
         grid-column: 1 / span 2;
     }
     
