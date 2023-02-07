@@ -56,13 +56,13 @@
         grid-column: 4;
         margin-left: 50%;
     }
-    header .logo{
-        width: 50%;
-    }
+    
 
     /* footer*/
 
-
+    footer .logo{
+        width: 80%;
+    }
 
     footer h5{
         font-size: 32px;

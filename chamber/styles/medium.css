@@ -140,7 +140,9 @@
         padding-left: 5%;
     }
     
-    
+    footer .logo{
+        width: 100%;
+    }
     
     footer{display: grid;
     grid-template-columns: 10% 60% 30%;
