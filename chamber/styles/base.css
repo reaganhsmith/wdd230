@@ -74,8 +74,8 @@ h1{
     margin-left: 5%;
 }
 
-.logo{
-    width: 100%;
+header .logo{
+    margin-left: 5%;
 }
 
 
@@ -307,7 +307,7 @@ footer .logo{
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 60%;
+width: 30%;
 }
 
 footer h5{
