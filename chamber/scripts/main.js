@@ -1,14 +1,42 @@
-const datefieldUK = document.querySelector(".date"); 
+
+//The code to get the date at the top of the banner
+const datefield = document.querySelector(".date"); 
 
 const now = new Date();
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+const fulldate = new Intl.DateTimeFormat("en-UK", {
 	dateStyle: "full"
 }).format(now);
 
+datefield.innerHTML = `${fulldate}`;
 
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 
+
+//To change the last updated on the bottom of the page
+const lastUpdated = new Date(document.lastModified).toLocaleString();
+document.querySelector("#timemod").innerHTML = `Last Updated: ${lastUpdated}`;
+
+
+
+//to add the current year to the bottom of the page
+const yearDate = now.getFullYear();
+document.querySelector("#addyear").innerHTML = `&copy;${yearDate} Star Chamber of Commerce`;
+
+
+
+
+//To dispaly that there is a chamber of Commerce Meeting
+const dayOfWeek = now.getDay();
+const meetingTime = document.querySelector("#meeting");
+
+if (dayOfWeek === 1 || dayOfWeek === 2){
+    document.querySelector("#meeting").style.display = "block";
+} else{
+    document.querySelector("#meeting").style.display = "none";
+};
+
+
+//for my navigation menu
 function toggleMenu(){
     document.querySelector('#primaryNav').classList.toggle('open');
     document.querySelector('#hamburgerBtn').classList.toggle('open');
@@ -16,27 +44,3 @@ function toggleMenu(){
 
 const hamButton =document.querySelector('#hamburgerBtn');
 hamButton.onclick = toggleMenu;
-
-
-const date =  new Date().getFullYear();
-
-
-
-
-let lastMod = new Date(document.lastModified);
-var removeTZ = lastMod.toLocaleString();
-
-
-const newParagraph = document.createElement("p");
-newParagraph.innerText =`Last Modification: ${removeTZ}`;
-
-document.querySelector('#timemod').appendChild(newParagraph);
-
-
-const dayOfWeek = new Date().getDay();
-
-if (dayOfWeek === 1 || dayOfWeek === 2){
-    const newP = document.createElement('p');
-    newP.innerText = 'Come join us for a chamber meeting tonight at 7pm';
-    newParagraph.appendChild(newP);
-}

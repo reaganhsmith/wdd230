@@ -1,42 +1,42 @@
-@media only screen and (min-width: 37rem){
+@media only screen and (min-width: 600px){
 
     /*Header*/
-    a img{
-        width: 50%;
+    .smlogos{
+        width: 60%;
     }
-    
     /* main section with grid*/
     main{
         display: grid;
         gap: 1rem;
         grid-template-columns: 60% 38.2%;
+        row-gap: 3em;
     }
     .spotlight{
         display: flex;
         grid-row: 3 / span 1;
-        margin-top: 1rem;
         justify-content: center;
+        grid-gap: 2em;
+       
     }
-    
+
     .spotlight img{
         width: 8rem;
-        margin: 1rem;
     }
     
     .join{
         display: block;
     }
 
+    .cta img{
+        width: auto;
+    }
+
     .cta h2{
         font-size: 38px;
-        top: -450px;
     }
 
     .cta button{
-        bottom: 195px;
-        right: -395px;
         width: auto;
-        padding: 2%;
     }
 
 
@@ -44,8 +44,6 @@
     .event{
         grid-row: 5 / span 1;
         grid-column: 1 / 1;
-        margin-top: 0;
-        margin-bottom: 1rem;
         padding-bottom: 0;
         display: flex;
         flex-direction: column;
@@ -53,19 +51,9 @@
         padding: 1rem;
     }
 
-    .event h2{
-        margin-top: 5rem;
-    }
-    .event h3{
-        margin-top: -1rem;
-    }
-    .event p{
-        margin: 0;
-    }
 
     .event img{
         width: 7rem;
-        margin: -2% 0 -5%;
     }
     
     
@@ -80,7 +68,6 @@
 
     /*join us section*/
     .join{
-        margin-top: -1rem;
         padding: 2rem;
         background-color: var(--third-color);
     }
@@ -108,9 +95,7 @@
     /*weather section*/
     .weather{
         grid-column: 2; 
-        margin: 0;
         padding: 0;
-        margin-bottom: 1rem;
     }
 
     .weather img{
@@ -123,8 +108,6 @@
 
     .weather p{
         font-size: 18px;
-        margin-right: 1rem;
-        margin-left: 1rem;
     }
 
     .weatherbottom{
@@ -134,8 +117,12 @@
     .weatherbottom p{
         font-size: 15px;
     }
+
+    .innerweather{
+        justify-content: center;
+    }
     /* footer time*/
-    footer h5, footer p{
+    footer h3, footer p{
         text-align:left;
         padding-left: 5%;
     }
@@ -147,6 +134,7 @@
     footer{display: grid;
     grid-template-columns: 10% 60% 30%;
     align-items: center;
+    margin-top: 2em;
     }
     
     footer p:nth-child(2){

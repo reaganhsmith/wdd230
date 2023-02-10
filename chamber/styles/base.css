@@ -14,8 +14,9 @@
 header{
     background-color: var(--third-color);
     display: grid;
-    grid-template-columns: 1fr 50% 1fr 1fr 1fr;
+    grid-template-columns: 1fr 40% 1fr 1fr ;
     align-items: center;
+    margin-bottom: 3em;
 }
 header p{
     grid-column: 1 / span 2;
@@ -24,7 +25,6 @@ header p{
 }
 nav{
     display: grid;  
-    margin: 1em;
 }
 nav button{
     background-color: transparent;
@@ -32,12 +32,16 @@ nav button{
     color: var(--main-color);
     font-size: 2rem;
     border-color: rgb(187, 187, 187);
+    width: 2em;
 
+}
+
+nav span{
+    font-size: 1em;
 }
 
 nav ul{
     list-style-type: none;
-    margin-left: -25%;
     display: none;
     background-color: var(--main-color);
     color: white;
@@ -64,29 +68,38 @@ nav ul.open{
 } 
 
 
-a img{
-    width: 70%;
+header img{
+    width: 40%;
 
 }
 
 h1{
     font-size: 20px;
-    margin-left: 5%;
+   
 }
 
-header .logo{
-    margin-left: 5%;
-}
+
 
 
 .date{grid-column: 1 / span 5;
     grid-row: 3 / span 1;
-text-align: center;
-padding: 1em;
-margin: .5em;
-background-color: var(--second-color);
-color: var(--third-color);
-font-family: var(--paragraph-font);}
+    text-align: center;
+    font-family: var(--paragraph-font);}
+
+.banner{
+    grid-column: 1 / span 5;
+    background-color: var(--second-color);
+    color: var(--third-color);
+    margin: 1em;
+    padding: 1em;
+}
+
+#meeting{
+    color: white;
+    text-align: center;
+    grid-column: 1 / span 5;
+    grid-row: 4 / span 1;
+}
 
 #hamburgerBtn span:nth-child(1){display: block;}
 #hamburgerBtn span:nth-child(2){display: none;}
@@ -105,6 +118,12 @@ p, a{
 
 /* Here is the code for the main section */
 
+main{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 3em;
+}
+
 main div p{
     color: var(--main-color);
     font-size: 14px;
@@ -119,18 +138,16 @@ main div p{
 /*call to action section*/
 
 .cta{
-    margin-top: 2rem;
-    margin-bottom: -8rem;
+    position: relative;
 }
 .cta img{
     width: 100%;
 }
 
 .cta h2{
-    position: relative;
-    top: -330px;
-    right: -30px;
+    position: absolute;
     font-size: 32px;
+    margin-left: 1%;
 }
 
 .cta button{
@@ -141,10 +158,11 @@ main div p{
     font-family: var(--paragraph-font);
     font-size: 20px;
     border-radius: 15px;
-    position: relative;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
     width: auto;
-    bottom: 215px;
-    right: -220px;
+
 }
 
 .cta button:hover{
@@ -157,8 +175,10 @@ main div p{
 
 .event{
     background-color: var(--third-color);
-    margin-top: 2rem;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
 }
 
 .event h2, .event p{
@@ -179,8 +199,6 @@ main div p{
 .event img{
     width: 8rem;
     animation: spin 20s linear infinite;
-    position: absolute;
-    margin: -5% 0 10% -5%;
 }
  
 @keyframes spin {
@@ -195,12 +213,10 @@ main div p{
 .weather{
 padding: 2rem;
 background-color: var(--third-color);
-margin-top: 2rem;
-margin: 3rem;
 }
 
 .weather img{
-    width: 12rem;
+    width: 9rem;
 }
 
 .weather h2{
@@ -211,10 +227,9 @@ margin: 3rem;
     display: flex;
     align-items: center;
     gap: 3rem;
-    margin-top: -2rem;
 }
 .innerweather h3{
-    font-size: 32px;
+    font-size: 28px;
     color: var(--second-color);
 }
 
@@ -222,7 +237,8 @@ margin: 3rem;
     text-align: right;
     font-size: 22px;
     border-bottom: solid 2px var(--main-color);
-    padding-bottom: 1rem;
+    padding: 1rem;
+    margin: 1em;
 }
 
 .weather ul{
@@ -234,12 +250,13 @@ margin: 3rem;
     display: flex;
     gap: 3rem;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .weatherbottom p{
     border-bottom: none;
     font-size: 18px;
-    margin: auto;
 }
 
 /*news release section*/
@@ -257,13 +274,10 @@ margin: 3rem;
 
 .spotlight{
     background-color: var(--main-color);
-    margin-top: 3rem;
     padding: 1rem;
-    margin-bottom: 3rem;
 }
 .spotlight1, .spotlight2, .spotlight3{
     padding: 1rem;
-    margin: 2rem;
     background-color: var(--third-color);
     display: flex;
     flex-direction: column;
@@ -273,7 +287,6 @@ margin: 3rem;
 .spotlight img{
     width: 15rem;
     display: flex;
-    margin-top: -2rem;
 }
 
 .spotlight h2{
@@ -282,7 +295,6 @@ margin: 3rem;
 
 .spotlight h3, .spotlight p{
     text-align: center;
-    margin-top: auto;
 }
 .spotlight h3{
     border-bottom: solid 2px var(--main-color);
@@ -300,19 +312,16 @@ footer{
     background-color: var(--main-color);
     color: white;
     padding: 5%;
-
+    margin-top: 3em;
 }
 
 footer .logo{
-display: block;
-margin-left: auto;
-margin-right: auto;
 width: 30%;
 }
 
-footer h5{
+footer h3{
+    text-align: left;
     font-size: 20px;
-    margin-bottom: -2%;
 }
 
 footer .very-bottom{
