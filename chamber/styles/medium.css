@@ -20,16 +20,14 @@
     }
 
     .spotlight img{
-        width: 8rem;
+        width: 7rem;
     }
     
     .join{
         display: block;
     }
 
-    .cta img{
-        width: auto;
-    }
+
 
     .cta h2{
         font-size: 38px;
