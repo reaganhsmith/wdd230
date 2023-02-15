@@ -11,6 +11,8 @@
 
 /*header and navigation code*/
 
+
+
 header{
     background-color: var(--third-color);
     display: grid;
@@ -331,3 +333,15 @@ footer .very-bottom{
 footer .very-bottom p:nth-child(2){
     font-weight: 700;
 }
+
+
+/*All images settings*/
+img{
+    filter: blur(0em);
+  transition: filter 3s;
+}
+
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
