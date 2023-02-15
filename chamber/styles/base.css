@@ -345,3 +345,9 @@ img{
 img[data-src] {
     filter: blur(0.2em);
   }
+
+
+  /*DISCOVER PAGE*/
+  .discoverimg img:hover{
+    filter:saturate(20%);
+border-radius: 15px;}

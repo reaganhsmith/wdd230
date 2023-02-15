@@ -78,6 +78,7 @@
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin: 0 3em;
+        
 
     }
 
@@ -165,5 +166,16 @@
     .spotlight p{
         margin-top: -1%;
     }
+
+    /* DISCOVER PAGE EDITS */
+
+   .imgsection {
+    display: flex;
+    grid-gap: 1rem;
+   }
+
+   .discoverimg img{
+    width: 250px;
+   }
     
     }
