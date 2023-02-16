@@ -171,11 +171,16 @@
 
    .imgsection {
     display: flex;
+    flex-direction: row;
     grid-gap: 1rem;
    }
 
    .discoverimg img{
-    width: 250px;
+    width: 225px;
+   }
+
+   .discoverimg p{
+    text-indent: 2em;
    }
     
     }

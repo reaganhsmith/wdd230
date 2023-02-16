@@ -151,5 +151,30 @@
     
     .very-bottom p:nth-child(3):before, .very-bottom p:nth-child(2):before{content:'|'}
     .very-bottom p:nth-child(3):after{content:'|'}
+
+    /* DISCOVER SECTION */
+
+    .imgsection {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 1rem;
+       }
+
+       .discoverimg{
+        display: flex;
+        flex-direction: column;
+
+       }
+
+       .discoverimg p{
+        text-align: center;
+        
+       }
+       .discoverimg img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }
     
     }

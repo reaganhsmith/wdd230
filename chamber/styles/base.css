@@ -348,6 +348,35 @@ img[data-src] {
 
 
   /*DISCOVER PAGE*/
+
+  .discoverimg img{
+    border-radius: 5px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .discoverimg img:hover{
     filter:saturate(20%);
 border-radius: 15px;}
+
+.discoverimg p{
+    padding: 1em;
+    font-size: 16px;
+    text-align: center;
+}
+
+.discoverimg{
+    background-color: var(--third-color);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgsection{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+   }
+
