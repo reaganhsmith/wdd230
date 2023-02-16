@@ -53,10 +53,6 @@
         width: 80%;
     }
 
-    footer{
-        margin-top: 5em;
-    }
-
 
     footer h3{
     font-size: 32px;}
@@ -174,7 +170,7 @@
     /* DISCOVER PAGE EDITS */
 
     .discovermain{
-        grid-template-rows: 70% 30%;
+        grid-template-rows: 2fr 1fr;
     }
 
     .imgsection{
@@ -204,5 +200,6 @@
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
    }
+
     
     }

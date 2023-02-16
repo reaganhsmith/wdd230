@@ -397,3 +397,12 @@ border-radius: 15px;}
     margin-top: -1rem;
    }
 
+   .visit{
+    background-color: var(--second-color);
+    text-align: center;
+    color: var(--third-color);
+    grid-column: 1 / span 3;
+    padding: 1rem;
+    border-radius: 15px;
+   }
+
