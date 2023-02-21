@@ -6,13 +6,13 @@ let difference;
 let daysBetweenVisits;
 
 //This checks if the site has been visited or ntot and then calculates the days between visits
-if (lastVisited >= 1) {
+if (lastVisited !== 0) {
     localStorage.setItem("dateVisited", today);
-    difference = today - lastVisited
-    daysBetweenVisits = Math.round(difference / 86400000)
+    difference = today - lastVisited;
+    daysBetweenVisits = Math.round(difference / 86400000);
 }
 else{
-    daysBetweenVisits= 'This is your first visit! Welcome to the page';
+    daysBetweenVisits = 'This is your first visit! Welcome to the page';
 }
 
 
