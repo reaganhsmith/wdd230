@@ -351,7 +351,7 @@ img[data-src] {
 
   .discoverimg img{
     border-radius: 5px;
-    width: 50%;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -359,7 +359,7 @@ img[data-src] {
 
   .discoverimg img:hover{
     filter:saturate(20%);
-border-radius: 15px;}
+    border-radius: 50px;}
 
 .discoverimg p{
     padding: 1em;
@@ -372,12 +372,12 @@ border-radius: 15px;}
     padding: 1em;
     border-radius: 15px;
     margin: 1em;
+    
 }
-
 
  
 
-   .income, .population, .age{
+   .infographics{
         background-color: var(--third-color);
         color: var(--main-color);
         padding: 1em;
@@ -386,15 +386,21 @@ border-radius: 15px;}
         border-radius: 15px;
    }
 
-   .income h2, .population h2, .age h2{
+   .infographics h2{
     color: var(--second-color);
     padding: 1em;
-    font-size: 36px;
+    font-size: 2em;
    }
 
-   .income h3, .population h3, .age h3{
-    font-size: 32px;
-    margin-top: -1rem;
+   .infographics h3{
+    font-size:1.5em;
+   }
+
+   .infodiscover{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
    }
 
    .visit{
@@ -403,10 +409,12 @@ border-radius: 15px;}
     color: var(--third-color);
     grid-column: 1 / span 3;
     padding: 1rem;
+    margin: 1em;
     border-radius: 15px;
    }
 
-   .income img, .population img, .age img{
-    width: 150px;
+   .infographics img{
+    width: 30%;
+    margin-bottom: -2em;
    }
 

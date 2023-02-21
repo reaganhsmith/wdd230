@@ -73,7 +73,7 @@
 
     /*MAIN SECTION*/
 
-    main{
+    main .homepage{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -169,40 +169,13 @@
 
     /* DISCOVER PAGE EDITS */
 
-    .discovermain{
-        grid-template-rows: 2fr 1fr;
+
+    .discoverimg p{
+        font-size: 24px;
     }
 
-    .imgsection{
-        display: flex;
-        flex-direction: row;
-    }
-   .discoverimg img{
-    width: 205px;
-   }
 
-   .discoverimg p{
-    text-indent: 2em;
-   }
-
-   .population{
-    grid-column: 1 / span 1;
-    margin: 0;
-   }
-
-   .age{
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
-    margin: 0;
-   }
-
-   .income{
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-   }
-
-   .income img, .population img, .age img{
-    width: 200px;
+   .infographics img{
     margin-bottom: -2rem;
    }
     
