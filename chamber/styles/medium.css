@@ -176,10 +176,10 @@
         align-items: center;
     }
 
-    
    .infodiscover{
     flex-direction: row;
 
+    gap: 0;
     justify-content: center;
    }
     }
