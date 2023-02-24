@@ -62,3 +62,9 @@ tr:nth-child(4) td:nth-child(2){
 tr:nth-child(n+3) td:nth-child(1){
    color: #5D4037;
 }
+
+caption{
+  caption-side: bottom;
+  padding: .5em;
+  color: #5D4037;
+}
