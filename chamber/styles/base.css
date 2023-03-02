@@ -488,7 +488,7 @@ form label input:required:valid{
 }
 table{
     border-collapse: collapse;
-    border: 1 px solid var(--main-color);
+    border: 1px solid var(--main-color);
     letter-spacing: 1px;
     font-size: 0.8rem;
     margin: 1rem 0;
