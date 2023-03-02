@@ -19,6 +19,10 @@
        
     }
 
+    h1{
+        margin-left: -70px;
+    }
+
     .spotlight img{
         width: 7rem;
     }

@@ -16,6 +16,7 @@
 }
     h1{
         font-size: 32px;
+
     }
 
 
@@ -40,7 +41,8 @@
         display: none;
     }
 
-    header a img{width: 50%;
+    header a img{width: 30%;
+        margin-left: 10%;
     }
     header .smlogos{
         margin-left: 20%;
