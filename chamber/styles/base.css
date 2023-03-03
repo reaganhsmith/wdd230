@@ -323,7 +323,7 @@ width: 30%;
 }
 
 footer h3{
-    text-align: left;
+    text-align: center;
     font-size: 20px;
 }
 
@@ -572,3 +572,85 @@ tr:nth-child(2n){
     display: flex;
     justify-content: center;
 }
+
+/*----------DIRECTORY PAGE----------*/
+
+.directorymenu{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.directorymenu button{
+    width: 120px;
+    height: 80px;
+    font-size: 18px;
+    background-color: var(--third-color);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: var(--main-color);
+    font-family: var(--paragraph-font);
+}
+
+.directorygrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .business{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--third-color);
+  padding: 1em;
+  margin: .5em;
+  }
+
+.list {
+	display: flex;
+	gap: 1em;
+justify-content: center;    
+}
+
+
+.list section {
+	display: flex;
+	padding: 0.25rem;
+
+    
+}
+
+.list section > * {
+	margin: 0 1rem;
+    width: 100%;
+}
+
+.list section img {
+	display: none;
+}
+
+.list section h2 {
+	font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+	background-color: transparent;
+}
+
+section h2 {
+	font-size: 18px;
+    text-align: center;
+    padding: .5em;
+}
+section p{
+    text-align: center;
+    padding: .5em;
+}
+

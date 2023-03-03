@@ -1,0 +1,77 @@
+{
+    "businesses": [
+        {
+        "name": "Bean Vetrenary Service",
+        "address": " 100 S Star Rd #100, Star, ID 83669",
+        "phone": "(208)982-1945",
+        "website": "http://www.beanveterinary.com/",
+        "image": "images/beanvet.png"
+      },
+    
+      {
+        "name": "Dickey's BBQ Pit",
+        "address": "10580 W State St, Star, ID 83669",
+        "phone": "(208) 488-4401",
+        "website": "https://www.dickeys.com",
+        "image": "images/dickeys.png"
+      },
+      {
+        "name": "Fiiz Drinks",
+        "address": "9759 W State St Suite 100, Star, ID 83669",
+        "phone": "(208) 972-7154",
+        "website": "https://fiizdrinks.com/",
+        "image": "images/fiiz.png"
+      },
+      {
+        "name": "Idaho Power Company",
+        "address": "1221 West Idaho St.Boise, ID 83702",
+        "phone": "(208) 388-6415",
+        "website": "https://www.idahopower.com/",
+        "image": "images/idahopower.jpeg"
+      },
+      {
+        "name": "New Hope Chiropractic",
+        "address": "11231 W Hercules Drive suite a, Star ID 83669",
+        "phone": "(208)985-0194",
+        "website": "https://www.mystarchiro.com/",
+        "image": "images/newhope.png"
+      },
+      {
+        "name": "Pear Tree Catering",
+        "address": "11330 W 2nd St, Star, ID 83669",
+        "phone": "(208) 724-7151",
+        "website": "http://www.danainapeartree.com/",
+        "image": "images/peartree.jpeg"
+      },
+      {
+        "name": "Proof Restaurant",
+        "address": "9759 W State St Suite 105, Star, ID 83669",
+        "phone": " (208) 502-0965",
+        "website": "toasttab.com",
+        "image": "images/proof.png"
+      },
+      {
+        "name": "Star Storage",
+        "address": "1345 W Starlight Drive, Star ID 83669",
+        "phone": "(208)222-3333",
+        "website": "https://www.starstorage.com/",
+        "image": "images/storage.png"
+      },
+      
+      {
+        "name": "Sweet and Salty Creamery",
+        "address": "1667 Main st, Star ID 83669",
+        "phone": "(208)123-4567",
+        "website": "https://www.sweetandsalty.com/",
+        "image": "images/icecream.png"
+      },
+      {
+        "name": "The Rusty Dog",
+        "address": "Food Truck- See website for location",
+        "phone": "(208) 781-0529",
+        "website": "https://www.therustydog.biz/",
+        "image": "images/rustydog.png"
+      }
+      
+    ]
+  }
