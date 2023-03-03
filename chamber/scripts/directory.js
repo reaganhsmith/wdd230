@@ -43,7 +43,7 @@ async function getBusinessData() {
         let portrait = document.createElement('img');
         let phone = document.createElement('p');
         let address = document.createElement('p');
-        let website = document.createElement('p');
+        let website = document.createElement('a');
 
         h2.textContent = `${business.name}`;
         portrait.setAttribute('src', business.image);
@@ -53,6 +53,7 @@ async function getBusinessData() {
         address.textContent = `${business.address}`;
         phone.textContent =`${business.phone}`;
         website.textContent=`${business.website}`;
+        website.href=business.website;
 
 
 

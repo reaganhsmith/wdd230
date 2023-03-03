@@ -593,65 +593,100 @@ tr:nth-child(2n){
     font-family: var(--paragraph-font);
 }
 
-.directorygrid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	align-items: center;
-}
 
-.cards{
+.grid .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 1em;
     
   }
 
-  .business{
- display: flex;
-  flex-direction: column;
+
+
+  .grid .business{
+    box-shadow: 5px 5px 10px rgb(181, 190, 205);
+    display: flex;
+     flex-direction: column;
   align-items: center;
   background-color: var(--third-color);
   padding: 1em;
-  margin: 1em;
   }
 
-.list {
-	display: flex;
-	gap: 1em;
-    justify-content: center;  
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+    margin: 1em;
+    
 }
 
 
-.list section {
+
+.list {
 	display: flex;
-	padding: 0.25rem;
-    width: 100%;
+	flex-direction: column;
+
+}
+
+.list section {
+    display:flex;
+    justify-content:center ;
+	padding: 1rem;
 }
 
 .list section > * {
 	margin: 0 1rem;
-    width: 100%;
 }
 
 .list section img {
-	display: none;
+	display: none; 
 }
 
-.list section h2 {
-	font-size: 1rem;
-}
 
 .list section:nth-child(even) {
-	background-color: transparent;
+	background-color: rgb(181, 202, 223);
 }
 
-section h2 {
-	font-size: 18px;
-    text-align: center;
-    padding: .5em;
+.list .cards:nth-child(odd) {
+	background-color: rgb(239, 247, 255);
 }
-section p{
-    text-align: center;
-    padding: .5em;
+section h2{
+    color: var(--main-color);
 }
+
+section a{
+	font-family: var(--paragraph-font);
+	font-size: 15px;
+    color: var(--main-color);
+}
+
+.list img {
+	width: 75px;
+}
+
+.list h2{
+    font-size: 12px;
+}
+
+.list a{
+    font-size: 12px;
+}
+.list p{
+    font-size: 12px;
+}
+
+.list .business{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--third-color);
+  padding: 1em;
+  }
+
 

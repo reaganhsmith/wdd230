@@ -191,8 +191,24 @@
    .memberselect{
     display: flex;
 }
+   /*------Directory page-------*/
+.list section img {
+    width: 150px;
+    display: block;
+}
 
+.list section img{
+    order: -1;
+}
+.list h2{
+    font-size: 28px;
+}
 
-
+.list a{
+    font-size: 16px;
+}
+.list p{
+    font-size: 18px;
+}
     
     }
