@@ -602,29 +602,30 @@ tr:nth-child(2n){
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 1em;
+    
   }
 
   .business{
-    display: flex;
+ display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--third-color);
   padding: 1em;
-  margin: .5em;
+  margin: 1em;
   }
 
 .list {
 	display: flex;
 	gap: 1em;
-justify-content: center;    
+    justify-content: center;  
 }
 
 
 .list section {
 	display: flex;
 	padding: 0.25rem;
-
-    
+    width: 100%;
 }
 
 .list section > * {
