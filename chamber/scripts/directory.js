@@ -44,16 +44,22 @@ async function getBusinessData() {
         let phone = document.createElement('p');
         let address = document.createElement('p');
         let website = document.createElement('a');
+        let membership = document.createElement('p');
 
         h2.textContent = `${business.name}`;
+
         portrait.setAttribute('src', business.image);
         portrait.setAttribute('alt', `business logo for ${business.name}`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '200px');
+
         address.textContent = `${business.address}`;
         phone.textContent =`${business.phone}`;
+        membership.textContent = `Membership level: ${business.membership}`
+
         website.textContent=`${business.website}`;
         website.href=business.website;
+
 
 
 
@@ -61,6 +67,7 @@ async function getBusinessData() {
         card.appendChild(portrait);     
         card.appendChild(phone);
         card.appendChild(address);
+        card.appendChild(membership);
         card.appendChild(website);
         
         
