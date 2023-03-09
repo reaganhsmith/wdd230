@@ -210,13 +210,24 @@
 }
 
 .list h2{
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .list a{
     font-size: 14px;
 }
 .list p{
-    font-size: 14px;
+    font-size: 12px;
 }
+
+.list section {
+    justify-content:center;
+	padding: 1rem;
+}
+
+.list .business{flex-direction: row;}
+.list section > * {
+	margin: 0 .6rem;
+}
+
     }

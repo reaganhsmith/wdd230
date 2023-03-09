@@ -195,11 +195,10 @@
 .list section img {
     width: 150px;
     display: block;
-}
-
-.list section img{
     order: -1;
 }
+
+
 .list h2{
     font-size: 28px;
 }
@@ -209,6 +208,10 @@
 }
 .list p{
     font-size: 18px;
+}
+
+.list section > * {
+	margin: 0 1rem;
 }
     
     }

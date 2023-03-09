@@ -636,13 +636,11 @@ tr:nth-child(2n){
 
 .list section {
     display:flex;
-    justify-content:center ;
 	padding: 1rem;
+    justify-content:center;
 }
 
-.list section > * {
-	margin: 0 1rem;
-}
+
 
 .list section img {
 	display: none; 
@@ -683,7 +681,7 @@ section a{
 
 .list .business{
     display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   background-color: var(--third-color);
   padding: 1em;
