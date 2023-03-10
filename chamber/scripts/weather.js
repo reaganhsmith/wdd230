@@ -1,6 +1,6 @@
 // select HTML elements in the document
 const currentTemp = document.querySelector('#temp');
-const weatherIcon = document.querySelector('#weather-icon');
+const imageContainer = document.querySelector('#weathericon');
 
 const weatherDescription = document.querySelector('#weathertype');
 
@@ -34,10 +34,13 @@ async function apiFetch() {
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
-  
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    weatherIcon.setAttribute('loading', 'lazy');
+    
+  const image = document.createElement("img");
+  image.src = `${iconsrc}`; // Replace with your image source URL
+  image.alt = `${desc}`; // Replace with your alternate text
+  image.loading = "lazy"; // Add lazy-loading
+
+  imageContainer.appendChild(image);
 
     weather = weatherData.weather[0].description;
     weatherDescription.innerHTML = `<p>${weather}</p>`;
