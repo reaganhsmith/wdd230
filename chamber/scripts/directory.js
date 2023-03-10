@@ -2,6 +2,8 @@ const gridbutton = document.querySelector("#gridbtn");
 const listbutton = document.querySelector("#listbtn");
 const display = document.querySelector("article");
 
+const spotlight = document.querySelector('.spotlight');
+
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
@@ -72,9 +74,16 @@ async function getBusinessData() {
         
         
 
+        
         cards.appendChild(card);
+
+
+
+        
+        
     }
     )
   }
+
 
 

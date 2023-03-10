@@ -12,7 +12,6 @@
 /*header and navigation code*/
 
 
-
 header{
     background-color: var(--third-color);
     display: grid;
@@ -113,9 +112,11 @@ h1{
 /* set fonts*/
 h1, h2, h3, h4{
     font-family: var(--header-font);
+    color: var(--main-color);
 }
 p, a{
     font-family: var(--paragraph-font);
+    color: var(--main-color);
 }
 
 
@@ -278,13 +279,15 @@ background-color: var(--third-color);
 .spotlight{
     background-color: var(--main-color);
     padding: 1rem;
+   
 }
-.spotlight1, .spotlight2, .spotlight3{
+.spotlight .business{
     padding: 1rem;
     background-color: var(--third-color);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1em;
 }
 
 .spotlight img{
@@ -294,19 +297,18 @@ background-color: var(--third-color);
 
 .spotlight h2{
     text-align: center;
-}
-
-.spotlight h3, .spotlight p{
-    text-align: center;
-}
-.spotlight h3{
     border-bottom: solid 2px var(--main-color);
     padding-bottom: 1rem;
 }
-
-.spotlight3{
-    display: none;
+.spotlight p{
+    text-align: center;
 }
+
+
+.spotlight a{
+    color: var(--main-color);
+}
+
 
 /* Here is the footer*/
 
@@ -335,6 +337,9 @@ footer .very-bottom p:nth-child(2){
     font-weight: 700;
 }
 
+footer h3, p {
+    color: var(--third-color);
+}
 
 /*All images settings*/
 img{

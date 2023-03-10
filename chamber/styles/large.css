@@ -154,19 +154,27 @@
         padding: 0;
     }
     
-    .spotlight1, .spotlight2, .spotlight3{
+    .spotlight .business{
         width: 300px;
-        height: 300px;
+        height: 80%;
         margin: 1em;
     }
-    .spotlight3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+    .spotlight img{
+        width: 100%;
     }
 
+    .spotlight h2{
+        font-size: 32px;
+        
+    }
     .spotlight p{
+        font-size: 22px;
         margin-top: -1%;
+    }
+
+    .spotlight .business:nth-of-type(3){
+        display: flex;
     }
 
     /* DISCOVER PAGE EDITS */
@@ -192,8 +200,10 @@
     display: flex;
 }
    /*------Directory page-------*/
+
+
 .list section img {
-    width: 150px;
+    width: 100px;
     display: block;
     order: -1;
 }
