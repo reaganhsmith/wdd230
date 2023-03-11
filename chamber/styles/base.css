@@ -381,7 +381,11 @@ img[data-src] {
     
 }
 
- 
+.discoverHeader {
+    text-align: center;
+}
+
+
 
    .infographics{
         background-color: var(--third-color);

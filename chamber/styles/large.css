@@ -208,7 +208,9 @@
     display: block;
     order: -1;
 }
-
+.list {
+    margin: 2em;
+}
 
 .list h2{
     font-size: 28px;
