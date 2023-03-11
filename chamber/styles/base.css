@@ -74,7 +74,7 @@ header img{
 
 }
 
-h1{
+.homepage h1{
     font-size: 20px;
     margin-left: -50px;
    
@@ -431,7 +431,7 @@ legend{
     font-family: var(--header-font);
     font-size: 1.5rem;
 }
-label{
+ label{
     font-family: var(--paragraph-font);
     display: block;
     margin: 1rem 1rem;
@@ -443,7 +443,7 @@ form{
     
 }
 
-fieldset{
+ fieldset{
     border: none;
     border-top: solid 3px var(--main-color);
 }
@@ -496,8 +496,7 @@ textarea{
     width: 100%;
 
 }
-
-.joinpage h2{
+h2{
     font-size: 32px;
     text-align: center;
     color: var(--main-color);
@@ -693,3 +692,55 @@ section a{
   }
 
 
+/*-------CONTACT PAGE-------*/
+
+.contactForm img{
+    width: 90%;
+    margin: auto;
+    padding: auto;
+    display: block;
+}
+
+.contactForm form{
+    background-color: var(--third-color);
+    margin: 1em;
+    box-shadow: 3px 3px 7px rgb(181, 190, 205);
+
+}
+
+.contactForm textarea{
+    width: 95%;
+}
+
+.contactBtn:hover{
+    background-color: var(--main-color);
+    color: var(--third-color);
+}
+
+.boardDirect img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+div.contactinfo{
+    margin: 2em;
+}
+
+.contactinfo p{
+    font-size: 18px;
+}
+
+.boardDirect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boardDirect p{
+    margin: 1em;
+}
+
+.boardDirect h2{
+    font-size: 24px;
+}
