@@ -233,4 +233,26 @@
 	margin: 0 .6rem;
 }
 
+
+/*-------CONTACT PAGE-------*/
+
+.contactForm img{
+    position: absolute;
+    bottom: 48em;
+    width: 500px;
+}
+.contactForm{
+    position: relative;
+    margin: 1em;
+    margin-top:17em;
+}
+
+.contactForm form{
+   padding-top: 5em;
+}
+
+.contactPage  h1{
+    margin: .5em 0;
+}
+
     }

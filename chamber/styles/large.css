@@ -224,5 +224,50 @@
 .list section > * {
 	margin: 0 1rem;
 }
+
+/*-------CONTACT PAGE-------*/
+.contactForm img{
+    bottom: 30em;
+    right: 1em;
+    width: 650px;
+}
+
+.contactForm{
+    margin-top: 7em;
+}
+.contactForm form{
+    width: 55%;
+}
+.contactForm fieldset{
+    border: none;
+}
+.contactForm legend{
+    border-bottom: solid 3px var(--main-color);
+    width: 80%;
+}
+
+
+.contact {display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3em;
+}
+
+div.contactinfo{
+    border: none;
+    grid-column: 1 / span 1;
+    text-align: left;
+}
+
+.boardDirect {
+    grid-column: 2 / span 1;
+    text-align: left;
+    align-items: start;
+}
+
+.boardDirect p{
+    text-align: left;
+    margin: 0;
+    padding-right: 5em;
+}
     
     }

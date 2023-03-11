@@ -430,6 +430,8 @@ img[data-src] {
 legend{
     font-family: var(--header-font);
     font-size: 1.5rem;
+    padding: .5em 1em;
+    text-align: center;
 }
  label{
     font-family: var(--paragraph-font);
@@ -710,6 +712,10 @@ section a{
 
 .contactForm textarea{
     width: 95%;
+    border: none;
+}
+.contactForm input{
+    background-color: white;
 }
 
 .contactBtn:hover{
@@ -726,21 +732,29 @@ section a{
 
 div.contactinfo{
     margin: 2em;
+    text-align: center;
+    padding-bottom: 2em;
+    border-bottom: solid 4px var(--second-color);
 }
 
 .contactinfo p{
     font-size: 18px;
+    
 }
 
 .boardDirect{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .boardDirect p{
     margin: 1em;
+    font-size: 18px;
+    text-align: center;
 }
 
 .boardDirect h2{
     font-size: 24px;
+    text-align: center;
 }
