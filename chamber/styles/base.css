@@ -145,13 +145,20 @@ main div p{
     position: relative;
 }
 .cta img{
-    width: 100%;
+    width: 100%; 
+    z-index: -1; 
+}
+
+.cta picture{
+   z-index: -1; 
 }
 
 .cta h2{
     position: absolute;
     font-size: 32px;
     margin-left: 1%;
+    z-index: 1; 
+   
 }
 
 .cta button{
@@ -502,7 +509,7 @@ textarea{
     width: 100%;
 
 }
-h2{
+.joinpage h2{
     font-size: 32px;
     text-align: center;
     color: var(--main-color);
