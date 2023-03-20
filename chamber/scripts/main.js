@@ -44,3 +44,6 @@ function toggleMenu(){
 
 const hamButton =document.querySelector('#hamburgerBtn');
 hamButton.onclick = toggleMenu;
+
+
+

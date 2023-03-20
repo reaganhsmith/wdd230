@@ -18,8 +18,12 @@
         grid-gap: 2em;
        
     }
+    .banner{
+        font-size: 16px;
+    }
 
-    h1{
+    header h1{
+        font-size: 28px;
         margin-left: -70px;
     }
 
