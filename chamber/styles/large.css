@@ -4,7 +4,7 @@
 
     /*Header section*/
     header{
-        grid-template-columns: 1fr 30% 40% 1fr;
+        grid-template-columns: .5fr 30% 40% 1fr;
     }
 
     nav ul{display: block;
@@ -14,11 +14,14 @@
     grid-column: 3;
     font-size: 22px;
 }
-    h1{
+    header h1{
         font-size: 32px;
 
     }
 
+    header .logo{
+            width: 40%;
+    }
 
     nav{
         grid-column: 3;
@@ -32,16 +35,26 @@
         padding: 0;
     }
 
+    nav ul.open{
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+    }
+
     nav ul li a:hover{
         background-color: transparent;
         color: var(--second-color);
     }
 
+
+
+    
+
     header button{
         display: none;
     }
 
-    header a img{width: 30%;
+    header a img{width: 25%;
         margin-left: 10%;
     }
     header .smlogos{
@@ -88,6 +101,7 @@
     .cta{
         grid-column: 2 / span 1;
         grid-row: 1 / span 2;
+        margin-top: 0;
     }
 
     .cta img{
