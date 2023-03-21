@@ -1,0 +1,50 @@
+
+
+@media only screen and (min-width: 1050px){
+
+    /*--------HEADER--------*/
+
+    header{
+        align-items: flex-end;
+    }
+
+    nav ul{display: block;
+    background-color: transparent;
+    display: flex;
+    font-size: 22px;
+}
+
+    nav ul li a{
+        color: var(--cream);
+        border: none;
+        padding: 0 4rem;
+    }
+
+    nav ul.open{
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+    }
+
+    header button{
+        display: none;
+    }
+
+
+    /*--------FOOTER--------*/
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 1rem 2rem;
+        font-size: 22px;
+        
+    }
+
+    footer img{
+        width: 13rem;
+    }
+
+
+}
