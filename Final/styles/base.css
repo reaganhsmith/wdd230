@@ -2,7 +2,7 @@
     --blue: #242933;
     --green: #C3D1A7;
     --pink: #e9baba;
-    --orange: #FBA363;
+    --orange: #f4b88e;
     --cream: #F7EFDA;
     --header-font: 'Playfair Display', serif;
     --paragraph-font: 'Source Sans Pro', sans-serif;
@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h2{
-    font-size: 28px;
+    font-size: 36px;
 }
 
 p{
@@ -134,7 +134,8 @@ footer img{
 
 .homeGrid{
     display: grid;
-    grid-template-rows: 1.4fr repeat(4, 1fr);
+    grid-template-rows: 1fr repeat(2, .5fr) 1.2fr .5fr;
+    gap: 2rem;
 }
 
 /*--------Call to action section--------*/
@@ -179,9 +180,9 @@ footer img{
     top: 17rem;
     right: 1rem;
 }
-.cta button:hover{
+.cta button:hover, .drinks button:hover{
     background-color: var(--pink);
-    color: var(--cream);
+    cursor: pointer;
 }
 .cta h1{
     position: absolute;
@@ -208,3 +209,95 @@ padding:  0 1rem;
 
 /*--------Weather--------*/
 
+.weather {
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.weather h3{
+    font-size: 64px;
+    margin: .5rem;
+}
+
+.weather img{
+    width: 100px;
+    margin-bottom: -2rem;
+}
+.weather p:nth-of-type(2){
+    border-bottom: solid 4px var(--blue);
+    width: 70%;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+}
+.weather p{
+    font-size: 24px;
+    text-align: center;
+}
+
+/*--------DRINKS MADE--------*/
+
+.arch{
+    width: 400px;
+    height: 420px;
+    background-color: var(--green);
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.drinks {
+    position: relative;
+    grid-row: 4 / span 1;
+    line-height: 0%;
+    padding: 2.5rem;
+}
+
+.drinks img{
+    position: absolute; 
+    top: 0;
+    right: 1rem;
+}
+
+.drinks h3{
+    font-size: 42px;
+}
+
+.drinks h4{
+    font-size: 102px;
+}
+
+.drinks button{
+    position: absolute; 
+    border: none;
+    background-color: var(--orange);
+    border-radius: 50px;
+    padding:  1rem 2rem;
+    font-size: 24px;
+    color: var(--blue);
+    text-transform: uppercase;
+    top: 25rem;
+    right: 14rem;
+}
+
+
+/*--------Contact us--------*/
+.contact{
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h3{
+    font-size: 32px;
+}
+
+.contact p{
+    font-size: 20px;
+}
