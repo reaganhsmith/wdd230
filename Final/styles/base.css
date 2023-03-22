@@ -1,7 +1,7 @@
 :root{
     --blue: #242933;
     --green: #C3D1A7;
-    --pink: #CD7B79;
+    --pink: #e9baba;
     --orange: #FBA363;
     --cream: #F7EFDA;
     --header-font: 'Playfair Display', serif;
@@ -14,6 +14,10 @@ html{
 h1, h2, h3, h4, h5, h6{
     font-family: var(--header-font);
     color: var(--blue);
+}
+
+h2{
+    font-size: 28px;
 }
 
 p{
@@ -126,10 +130,16 @@ footer img{
     width: 30px;
 }
 
+/*--------Home Grid--------*/
+
+.homeGrid{
+    display: grid;
+    grid-template-rows: 1.4fr repeat(4, 1fr);
+}
 
 /*--------Call to action section--------*/
 
-.circle {
+ .circle {
     background-color: var(--green);
     width: 400px;
     height: 400px;
@@ -138,10 +148,11 @@ footer img{
     position: absolute;
     top: 1rem;
     right: 3rem;
-}
+} 
 
 .cta img{
-    position: absolute;
+     position: absolute; 
+    width: 250px;
 }
 
 .cta img:nth-of-type(1){
@@ -156,7 +167,7 @@ footer img{
     z-index: 1;
 }
 
-.cta button{
+ .cta button{
     position: absolute; 
     border: none;
     background-color: var(--orange);
@@ -168,12 +179,32 @@ footer img{
     top: 17rem;
     right: 1rem;
 }
-
+.cta button:hover{
+    background-color: var(--pink);
+    color: var(--cream);
+}
 .cta h1{
     position: absolute;
-    
+    top: 1rem;
+    right: 2rem;
 }
 
 .cta {
     position: relative;
+    grid-row: 1 / span 1;
+} 
+
+/*--------ABOUT CARLSBAD--------*/
+.carlsbad p{
+    background-color: var(--pink);
+    padding: 1rem;
+    font-size: 18px;
 }
+
+.carlsbad h2{
+padding:  0 1rem;
+}
+
+
+/*--------Weather--------*/
+
