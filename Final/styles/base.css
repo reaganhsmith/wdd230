@@ -181,7 +181,8 @@ footer img{
     right: 1rem;
 }
 .cta button:hover, .drinks button:hover{
-    background-color: var(--pink);
+    background-color: var(--blue);
+    color: var(--cream);
     cursor: pointer;
 }
 .cta h1{

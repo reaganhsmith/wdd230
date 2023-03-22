@@ -44,7 +44,7 @@ async function apiFetch() {
     
     //humidity
     const humid = weatherData.main.humidity;
-    humidity.textContent = `${humid}%`;
+    humidity.textContent = `Humidity ${humid}%`;
 
     //for icon
     
