@@ -1,0 +1,128 @@
+@media only screen and (min-width: 600px){
+
+
+
+    /*--------Social media icons--------*/
+    .socialmedia{
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+
+    .socialmedia img{
+        width: 40px;
+    }
+
+    /*--------Home Grid--------*/
+    .homeGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
+    }
+
+
+
+    /*--------Call to Action--------*/
+
+    .cta{
+        grid-column: 1 / span 1;
+    }
+
+    .circle{
+        width: 500px;
+        height: 500px;
+        top: -2rem;
+        right: -18rem;
+    }
+
+
+    .cta img:nth-of-type(1){
+    top: -10rem;
+    right: -6rem;
+    width: 350px;
+    }
+    .cta img:nth-of-type(2){
+        top: 20rem;
+    right: -15rem;
+    width: 350px;
+    }
+
+    .cta h1{
+        top: -3rem;
+        right: -23rem;
+        font-size: 48px;
+    }
+
+    .cta button{
+        top: 16rem;
+        right: -20rem;
+    }
+
+
+    /*--------About Carlsbad--------*/
+
+    .carlsbad{
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+        margin-top: 3rem;
+    }
+
+    .carlsbad p{
+        font-size: 24px;
+    }
+
+    /*--------Weather--------*/
+
+    .weather{
+        grid-column: 2 / span 2;
+        grid-row: 3 / span 1;
+    }
+
+
+    /*--------Drinks Made--------*/
+
+    .arch{
+        top: 3rem;
+        right: -16rem;
+    }
+
+    .drinks img{
+        top: 1rem;
+        right: -21rem;
+    }
+
+    .drinks button{
+        top: 27rem;
+        right: -5rem;
+    }
+
+    .drinks h3{
+        top: 4rem;
+        right: -10rem;
+        font-size: 48px;
+    }
+
+    .drinks h4{
+        top: 1rem;
+        right: 1rem;
+       
+    }
+
+    .drinks h5{
+        top: 18rem; 
+        right: 3rem;
+        font-size: 48px;
+    }
+
+    /*--------Contact us-------*/
+
+    .contact {
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 2;
+        margin: 3rem 0;
+    }
+
+    
+
+
+
+}

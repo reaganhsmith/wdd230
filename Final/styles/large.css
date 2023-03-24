@@ -46,5 +46,26 @@
         width: 13rem;
     }
 
+    h2, h3, h4, h5{
+        font-size: 56px;
+    }
+
+    .carlsbad p{
+        font-size: 30px;
+    }
+
+    .carlsbad{
+        margin: 0;
+    }
+
+
+
+    /*--------drinks--------*/
+
+    .arch{
+        width:600px;
+        height: 650px;
+    }
+
 
 }

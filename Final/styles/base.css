@@ -54,8 +54,7 @@ nav button{
 nav ul{
     list-style-type: none;
     display: none;
-    background-color: var(--green);
-    opacity: .95;
+    background-color: var(--pink);
 }
 
 nav ul li a{
@@ -71,8 +70,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: var(--pink);
     font-weight: 400;
+    background-color: var(--green);
 }
 
 nav ul.open{
@@ -199,7 +198,7 @@ footer img{
 /*--------ABOUT CARLSBAD--------*/
 .carlsbad p{
     background-color: var(--pink);
-    padding: 1rem;
+    padding: 2rem;
     font-size: 18px;
 }
 
@@ -242,34 +241,21 @@ padding:  0 1rem;
 
 /*--------DRINKS MADE--------*/
 
+.drinks{
+    grid-row: 4 / span 1;
+    position: relative;
+}
+
 .arch{
     width: 400px;
-    height: 420px;
+    height: 450px;
     background-color: var(--green);
     border-radius: 50% 50% 0 0;
+    margin-top: 1rem;
     position: absolute;
     z-index: -1;
-}
-
-.drinks {
-    position: relative;
-    grid-row: 4 / span 1;
-    line-height: 0%;
-    padding: 2.5rem;
-}
-
-.drinks img{
-    position: absolute; 
-    top: 0;
-    right: 1rem;
-}
-
-.drinks h3{
-    font-size: 42px;
-}
-
-.drinks h4{
-    font-size: 102px;
+    top: 3rem;
+    right: 3rem;
 }
 
 .drinks button{
@@ -283,6 +269,34 @@ padding:  0 1rem;
     text-transform: uppercase;
     top: 25rem;
     right: 14rem;
+}
+
+.drinks img{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+.drinks h4{
+    position: absolute;
+    top: -1rem;
+    right: 24rem;
+    font-size: 120px;
+}
+
+.drinks h3{
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+    font-size: 42px;
+}
+
+.drinks h5{
+    position: absolute;
+    top: 15rem;
+    right: 21rem;
+    font-size: 42px;
 }
 
 
