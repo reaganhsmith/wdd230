@@ -60,7 +60,9 @@
         margin: 2rem 0;
     }
 
-    .circle{
+    /*--------cta--------*/
+
+    .circle{    
         width: 650px;
         height: 650px;
         top: -4rem;
@@ -95,9 +97,40 @@
 
     /*--------drinks--------*/
 
+    .drinks{
+        grid-column: 2 / span 1;
+    }
+
     .arch{
         width:600px;
         height: 650px;
+    }
+
+    .drinks img{
+        width: 500px;
+        top: 5rem;
+        right: -23rem;
+    }
+
+    .drinks button{
+        font-size: 36px;
+        top: 37rem;
+    }
+
+    .drinks h3{
+        top: 11rem;
+        right: -6rem;
+    }
+
+    .drinks h4{
+        top: 6rem;
+        right: 13rem;
+        font-size: 130px;
+    }
+
+    .drinks h5{
+        top: 25rem;
+        right: 8rem;
     }
 
 
