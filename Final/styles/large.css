@@ -50,13 +50,46 @@
         font-size: 56px;
     }
 
+    /*--------MAIN SECTION--------*/
+
     .carlsbad p{
         font-size: 30px;
     }
 
     .carlsbad{
-        margin: 0;
+        margin: 2rem 0;
     }
+
+    .circle{
+        width: 650px;
+        height: 650px;
+        top: -4rem;
+    }
+
+    .cta img:nth-of-type(1){
+        width: 400px;
+        top: -10rem;
+        right: 1rem;
+    }
+
+    .cta img:nth-of-type(2){
+        width: 450px;
+        top: 24rem;
+        right: -12rem;
+    }
+
+    .cta h1{
+        font-size: 78px;
+        right: -33rem;
+    }
+
+    .cta button{
+        font-size: 36px;
+        top: 23rem;
+
+    }
+
+
 
 
 
