@@ -31,6 +31,39 @@
         </nav>
     </header>
     <main>
+        <form method="get">
+            <fieldset>
+                <legend>Drink Maker</legend>
+                  <label class="top">First Name* <input type="text" name="fname" required></label> 
+                  
+                  <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                  <label class="top">Phone Number* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <legend>Fruit Selection</legend>
+                <label class="top"> Option #1<select name="subject" class="dropDown">
+                    <option value="">Select 1</option>       
+                </select></label>
+
+                <label class="top"> Option #2 <select name="subject" class="dropDown2">
+                    <option value="">Select 1</option>       
+                </select></label>
+
+                <label class="top"> Option #3 <select name="subject" class="dropDown3">
+                    <option value="">Select 1</option>       
+                </select></label>
+
+
+
+                <p>Any special Instructions </p>
+                
+                <label>
+                <textarea name="description" rows="4" cols="40"></textarea>
+                </label>
+            </fieldset>
+    
+    
+            <input type="submit" value="Create my Drink" class="submitBtn">
+    
+        </form>
         
     </main>
     <footer>
@@ -41,6 +74,7 @@
     </footer>
 	<script src="scripts/updated.js"></script>
     <script src="scripts/nav.js"></script>
+    <script src="scripts/form.js"></script>
 
   </body>
 </html>
