@@ -1,15 +1,409 @@
+:root{
+    --blue: #242933;
+    --green: #C3D1A7;
+    --pink: #e9baba;
+    --orange: #f4b88e;
+    --cream: #F7EFDA;
+    --header-font: 'Playfair Display', serif;
+    --paragraph-font: 'Source Sans Pro', sans-serif;
+}
+
+html{
+    background-color: var(--cream);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--header-font);
+    color: var(--blue);
+}
+
+h2{
+    font-size: 36px;
+}
+
+p{
+    font-family: var(--paragraph-font);
+    font-weight: 200;
+}
+
+/*--------HEADER--------*/
+
+header{
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+header img{
+    width: 13rem;
+}
+
+/*--------navi--------*/
 
 
-/*--------FOOTER--------*/
 
+nav button{
+    background-color: transparent;
+    color: var(--cream);
+    font-size: 4rem;
+    border-color: transparent;
+}
+
+
+nav ul{
+    list-style-type: none;
+    display: none;
+    background-color: var(--pink);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--blue);
+    display: block;
+    padding: 1rem;
+    font-size: 24px;
+    font-family: var(--paragraph-font);
+    text-transform: uppercase;
+    font-weight: 200;
+
+}
+
+nav ul li a:hover{
+    font-weight: 400;
+    background-color: var(--green);
+}
+
+nav ul.open{
+    display: flex;
+    position: absolute;
+    top: 5em;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px #f5e3d7;
+    z-index: 1;
+    padding: 1em 0;
+    
+} 
+span{
+    font-family: var(--header-font);
+}
+#hamburgerBtn span:nth-child(1){display: block;}
+#hamburgerBtn span:nth-child(2){display: none;}
+
+#hamburgerBtn.open span:nth-child(1){display: none;}
+#hamburgerBtn.open span:nth-child(2){display: block;
+font-size: 42px;}
 
 
 
 
 /*--------FOOTER--------*/
 footer{
-    background-color: ;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    color: var(--cream);
+    font-size: 12px;
+    padding: 1rem;
+    font-weight: 200;
 }
+
 footer img{
-    width: 20%;
+    width: 10rem;
 }
+
+
+
+/*--------Social Media logos--------*/
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: .5rem;
+}
+
+.socialmedia img{
+    width: 30px;
+}
+
+/*--------Home Grid--------*/
+
+.homeGrid{
+    display: grid;
+    grid-template-rows: 1fr repeat(2, .5fr) 1.2fr .5fr;
+    gap: 2rem;
+}
+
+/*--------Call to action section--------*/
+
+ .circle {
+    background-color: var(--green);
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+} 
+
+.cta img{
+     position: absolute; 
+    width: 250px;
+}
+
+.cta img:nth-of-type(1){
+    top: -3rem;
+    right: 13rem;
+    width: 250px;
+}
+.cta img:nth-of-type(2){
+    top: 18rem;
+    right: 8rem;
+    width: 270px;
+    z-index: 1;
+}
+
+ .cta button{
+    position: absolute; 
+    border: none;
+    background-color: var(--orange);
+    border-radius: 50px;
+    padding:  1rem 2rem;
+    font-size: 24px;
+    color: var(--blue);
+    text-transform: uppercase;
+    top: 17rem;
+    right: 1rem;
+}
+.cta button:hover, .drinks button:hover{
+    background-color: var(--blue);
+    color: var(--cream);
+    cursor: pointer;
+}
+.cta h1{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+.cta {
+    position: relative;
+    grid-row: 1 / span 1;
+} 
+
+/*--------ABOUT CARLSBAD--------*/
+.carlsbad p{
+    background-color: var(--pink);
+    padding: 2rem;
+    font-size: 18px;
+}
+
+.carlsbad h2{
+padding:  0 1rem;
+}
+
+
+/*--------Weather--------*/
+
+.weather {
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.weather h3{
+    font-size: 64px;
+    margin: .5rem;
+}
+
+.weather img{
+    width: 100px;
+    margin-bottom: -2rem;
+}
+.weather p:nth-of-type(2){
+    border-bottom: solid 4px var(--blue);
+    width: 70%;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+}
+.weather p{
+    font-size: 24px;
+    text-align: center;
+}
+
+/*--------DRINKS MADE--------*/
+
+.drinks{
+    grid-row: 4 / span 1;
+    position: relative;
+}
+
+.arch{
+    width: 400px;
+    height: 450px;
+    background-color: var(--green);
+    border-radius: 50% 50% 0 0;
+    margin-top: 1rem;
+    position: absolute;
+    z-index: -1;
+    top: 3rem;
+    right: 3rem;
+}
+
+.drinks button{
+    position: absolute; 
+    border: none;
+    background-color: var(--orange);
+    border-radius: 50px;
+    padding:  1rem 2rem;
+    font-size: 24px;
+    color: var(--blue);
+    text-transform: uppercase;
+    top: 25rem;
+    right: 14rem;
+}
+
+.drinks img{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+.drinks h4{
+    position: absolute;
+    top: -1rem;
+    right: 24rem;
+    font-size: 120px;
+}
+
+.drinks h3{
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+    font-size: 42px;
+}
+
+.drinks h5{
+    position: absolute;
+    top: 15rem;
+    right: 21rem;
+    font-size: 42px;
+}
+
+
+/*--------Contact us--------*/
+.contact{
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h3{
+    font-size: 32px;
+}
+
+.contact p{
+    font-size: 20px;
+}
+
+/*--------FORM PAGE--------*/
+
+.freshForm{
+    background-color: var(--pink);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.freshForm p{
+    margin-left: 1rem;
+    font-size: 24px;
+    
+}
+
+.fresh img{
+    display: none;
+}
+
+fieldset{
+    border: none;
+}
+
+label{
+    display: block;
+    margin: .5rem;
+    padding: .5rem;
+    font-family: var(--paragraph-font);
+}
+
+legend{
+    font-family: var(--header-font);
+    font-size: 34px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+input{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    width: 80%;
+    font-size: 18px;
+
+}
+
+.fruitSelection{
+    border: none;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    width: 80%;
+}
+
+textarea{
+    border: none;
+    width: 90%;
+    padding: 1rem;
+}
+
+.submitBtn{
+    border: none;
+    background-color: var(--blue);
+    border-radius: 50px;
+    padding:  1rem 2rem;
+    font-size: 18px;
+    color: var(--cream);
+    
+}
+
+.submitBtn:hover, .fresh button:hover{
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.fresh button{
+    border: none;
+    background-color: var(--blue);
+    border-radius: 50px;
+    font-size: 18px;
+    color: var(--cream);
+    width: 50%;
+    height: 5rem;
+}
+
+.yourInfo{
+    font-size: 24px;
+    padding: 1rem;
+}
+

@@ -1,0 +1,156 @@
+
+
+@media only screen and (min-width: 1050px){
+
+    /*--------HEADER--------*/
+
+    header{
+        align-items: flex-end;
+    }
+
+    nav ul{display: block;
+    background-color: transparent;
+    display: flex;
+    font-size: 22px;
+}
+
+    nav ul li a{
+        color: var(--cream);
+        border: none;
+        padding: 0 4rem;
+    }
+
+    nav ul.open{
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+    }
+
+    header button{
+        display: none;
+    }
+
+
+    /*--------FOOTER--------*/
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 1rem 2rem;
+        font-size: 22px;
+        
+    }
+
+    footer img{
+        width: 13rem;
+    }
+
+    h2, h3, h4, h5{
+        font-size: 56px;
+    }
+
+    /*--------MAIN SECTION--------*/
+
+    .carlsbad p{
+        font-size: 30px;
+    }
+
+    .carlsbad{
+        margin: 2rem 0;
+    }
+
+    /*--------cta--------*/
+
+    .circle{    
+        width: 650px;
+        height: 650px;
+        top: -4rem;
+    }
+
+    .cta img:nth-of-type(1){
+        width: 400px;
+        top: -10rem;
+        right: 1rem;
+    }
+
+    .cta img:nth-of-type(2){
+        width: 450px;
+        top: 24rem;
+        right: -12rem;
+    }
+
+    .cta h1{
+        font-size: 78px;
+        right: -33rem;
+    }
+
+    .cta button{
+        font-size: 36px;
+        top: 23rem;
+
+    }
+
+
+
+
+
+    /*--------drinks--------*/
+
+    .drinks{
+        grid-column: 2 / span 1;
+    }
+
+    .arch{
+        width:600px;
+        height: 650px;
+    }
+
+    .drinks img{
+        width: 500px;
+        top: 5rem;
+        right: -23rem;
+    }
+
+    .drinks button{
+        font-size: 36px;
+        top: 37rem;
+    }
+
+    .drinks h3{
+        top: 11rem;
+        right: -6rem;
+    }
+
+    .drinks h4{
+        top: 6rem;
+        right: 13rem;
+        font-size: 130px;
+    }
+
+    .drinks h5{
+        top: 25rem;
+        right: 8rem;
+    }
+
+
+     /*--------FORM PAGE-------*/
+
+
+     .fresh{
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem 5rem;
+     }
+
+     .freshForm{
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+        margin-top: 1rem;
+     }
+        
+     
+
+     
+
+
+}
