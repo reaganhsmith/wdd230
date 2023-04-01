@@ -76,7 +76,7 @@ nav ul li a:hover{
 }
 
 nav ul.open{
-    display: flex;s
+    display: flex;
     position: absolute;
     top: 5em;
     right: 0;
@@ -215,6 +215,7 @@ padding:  0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -222,22 +223,34 @@ padding:  0 1rem;
 .weather h3{
     font-size: 64px;
     margin: .5rem;
+    text-align: center;
 }
 
 .weather img{
-    width: 100px;
-    margin-bottom: -2rem;
+    width: 100%;
+    margin: auto;
 }
 .weather p:nth-of-type(2){
     border-bottom: solid 4px var(--blue);
-    width: 70%;
     margin-top: -1rem;
     padding-bottom: 1rem;
     font-size: 18px;
+    text-align: center;
+
 }
 .weather p{
     font-size: 24px;
     text-align: center;
+}
+
+
+.rightWeather h4{font-size: 32px;}
+
+.rightWeather li{
+    list-style-type: none;
+    font-family: var(--paragraph-font);
+    text-align: center;
+    padding-bottom: 3rem;
 }
 
 /*--------DRINKS MADE--------*/

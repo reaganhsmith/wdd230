@@ -92,7 +92,35 @@
     }
 
 
+    /*--------WEATHER--------*/
 
+
+
+  .weather{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .weather p:nth-of-type(2) {
+    border: none;
+    font-size: 24px;
+}
+
+.leftWeather{
+    border-right: solid 5px var(--blue);
+    padding: 3rem;
+    margin: 1rem;
+}
+
+.leftWeather img{
+    width:50%;
+    margin-left: 25%;
+}
+
+.weather p{
+    font-size: 36px;
+}
 
 
     /*--------drinks--------*/

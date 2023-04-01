@@ -1,6 +1,5 @@
 // Retrieve the form count from localStorage, or default to 0
 const formCount = localStorage.getItem('formCount') || 0;
-console.log(formCount);
 
 
 // Update and create a header, then add text content 
