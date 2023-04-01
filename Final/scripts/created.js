@@ -6,5 +6,4 @@ if (localStorage.getItem('formSubmissions') === null) {
 // Add event listener to the form 
 document.querySelector('.freshForm').addEventListener('submit', function() {
 localStorage.setItem('formSubmissions', parseInt(localStorage.getItem('formSubmissions')) + 1);
-
 });

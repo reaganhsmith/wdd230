@@ -103,3 +103,6 @@ fetch(apiUrl)
         weather.appendChild(weatherRight);
     
   }) 
+
+
+  

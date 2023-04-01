@@ -29,30 +29,30 @@
         width: 500px;
         height: 500px;
         top: -2rem;
-        right: -18rem;
+        right: -34rem;
     }
 
 
     .cta img:nth-of-type(1){
     top: -10rem;
-    right: -6rem;
+    right: -20rem;
     width: 350px;
     }
     .cta img:nth-of-type(2){
         top: 20rem;
-    right: -15rem;
+    right: -30rem;
     width: 350px;
     }
 
     .cta h1{
         top: -3rem;
-        right: -23rem;
+        right: -35rem;
         font-size: 48px;
     }
 
     .cta button{
         top: 16rem;
-        right: -20rem;
+        right: -30rem;
     }
 
 
