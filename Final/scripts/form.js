@@ -11,19 +11,25 @@ const formInfo = document.querySelector('.formInfo');
 
 
 submitBtn.addEventListener("click", () => {
+
+    freshForm.style.display = 'none';
   
 
     const firstName = fname.value;
-    const emailText = emailAdd.value;
-    const phoneText = phoneNum.value;
+    // const emailText = emailAdd.value;
+    // const phoneText = phoneNum.value;
 
-    const fruit1 = fruitChoice1.options[fruitChoice1.selectedIndex].text;
-    const fruit2 = fruitChoice2.options[fruitChoice2.selectedIndex].text;
-    const fruit3 = fruitChoice3.options[fruitChoice3.selectedIndex].text;
+    // const fruit1 = fruitChoice1.options[fruitChoice1.selectedIndex].text;
+    // const fruit2 = fruitChoice2.options[fruitChoice2.selectedIndex].text;
+    // const fruit3 = fruitChoice3.options[fruitChoice3.selectedIndex].text;
 
-    const instr = specialInstructions.value;
+    // const instr = specialInstructions.value;
 
-console.log(firstName, emailText, fruit1, fruit2, fruit3, instr, phoneText);
+    const text1 = document.createElement('p');
+    text1.textContent = `${firstName}`;
+
+    formInfo.appendChild(text1);
+
 
   
 })
