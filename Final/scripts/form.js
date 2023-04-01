@@ -1,51 +1,31 @@
-const url = "https://brotherblazzard.github.io/canvas-content/fruit.json";
-
-async function getFruitData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
-    displayfruit(data);
-    displayfruit2(data);
-    displayfruit3(data);
-
-  }
-
-
-  getFruitData();
+const fname = document.querySelector('.fname');
+const emailAdd = document.querySelector('.email');
+const phoneNum = document.querySelector('.phoneNum');
+const fruitChoice1 = document.querySelector('.dropDown');
+const fruitChoice2 = document.querySelector('.dropDown2');
+const fruitChoice3 = document.querySelector('.dropDown3');
+const specialInstructions = document.querySelector('.specialIns');
+const submitBtn = document.querySelector('.submitBtn');
+const freshForm = document.querySelector('.freshForm');
+const freshPage = document.querySelector('.fresh');
 
 
+submitBtn.addEventListener("click", () => {
+  
 
-  function displayfruit(fruits){
-        const dropDown = document.querySelector('.dropDown');
-    fruits.forEach((fruit) => {
-        let option = document.createElement('option');
-        let value = fruit.genus;
-        option.setAttribute('value', `${value}`);
+    const firstName = fname.value;
+    const emailText = emailAdd.value;
 
-        option.textContent = `${fruit.name}`;
-        dropDown.appendChild(option);
-    })}
+    const fruit1 = fruitChoice1.options[fruitChoice1.selectedIndex].text;
+    const fruit2 = fruitChoice2.options[fruitChoice2.selectedIndex].text;
+    const fruit3 = fruitChoice3.options[fruitChoice3.selectedIndex].text;
 
+    const instr = specialInstructions.value;
 
- function displayfruit2(fruits){
-        const dropDown2 = document.querySelector('.dropDown2');
-    fruits.forEach((fruit) => {
-        let option = document.createElement('option');
-        let value = fruit.genus;
-        option.setAttribute('value', `${value}`);
+    const text1 = document.createElement('p');
+    text1.textContent = `Hello ${firstName}! contact: ${emailText}. Fruits: ${fruit1}, ${fruit2}, and ${fruit3}. Follow: ${instr}. `;
 
-        option.textContent = `${fruit.name}`;
-        dropDown2.appendChild(option);
-    })}
+    freshPage.appendChild(text1);
 
-    function displayfruit3(fruits){
-        const dropDown3 = document.querySelector('.dropDown3');
-    fruits.forEach((fruit) => {
-        let option = document.createElement('option');
-        let value = fruit.genus;
-        option.setAttribute('value', `${value}`);
-
-        option.textContent = `${fruit.name}`;
-        dropDown3.appendChild(option);
-    })}
-
+  
+})
