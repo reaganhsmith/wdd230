@@ -72,10 +72,11 @@ nav ul li a{
 nav ul li a:hover{
     font-weight: 400;
     background-color: var(--green);
+    color: var(--blue);
 }
 
 nav ul.open{
-    display: flex;
+    display: flex;s
     position: absolute;
     top: 5em;
     right: 0;
@@ -323,6 +324,7 @@ padding:  0 1rem;
     background-color: var(--pink);
     padding: 1rem;
     margin: 1rem;
+    border-radius: 20px;
 }
 
 .freshForm p{
@@ -407,3 +409,79 @@ textarea{
     padding: 1rem;
 }
 
+
+/*--------ABOUT PAGE--------*/
+
+/*--------history--------*/
+
+
+.history{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUs{
+    order: 2;
+    padding: 0 2rem;
+    background-color: var(--green);
+}
+
+.aboutUs h1{
+    font-size: 38px;
+    text-align: center;
+}
+
+.aboutUs p{
+    font-size: 18px; 
+}
+
+.history img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*--------facts--------*/
+
+
+
+marquee{
+    font-size: 24px;
+    background-color: var(--orange);
+    padding: 1rem;
+    word-spacing: 5rem;
+}
+
+/*-------Map and contact-------*/
+
+
+.mapContact{
+    margin-top: 5rem;
+}
+
+iframe{
+    width: 100%; 
+    height: 550px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.mapContact h2{
+    text-align: center;
+}
+
+.contactMethod{
+    background-color: var(--pink);
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem 3rem;
+}
+
+.contactMethod h3{
+    font-size: 48px;
+}
+
+.contactMethod p {
+    font-size: 20px;
+}
