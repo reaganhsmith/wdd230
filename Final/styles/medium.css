@@ -121,6 +121,33 @@
         margin: 3rem 0;
     }
 
+
+   
+     /*--------FORM PAGE-------*/
+
+     .fresh img{
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        height: 96.2%;
+        object-fit: cover;
+
+
+     }
+
+     .fresh{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2rem 2rem;
+     }
+
+     .freshForm{
+        margin: 0 0 1rem 0;
+        grid-row: 2 / span 1;
+
+     }
+
     
 
 

@@ -134,4 +134,23 @@
     }
 
 
+     /*--------FORM PAGE-------*/
+
+
+     .fresh{
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem 5rem;
+     }
+
+     .freshForm{
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+        margin-top: 1rem;
+     }
+        
+     
+
+     
+
+
 }

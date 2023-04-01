@@ -18,9 +18,10 @@
   </head>
   <body>
     <header>
-        <picture>
-            <a href="index.html"> <img src="images/bountifulfoods.png" alt="bountiful foods logo" loading="lazy"> </a>
-        </picture>
+            <a href="index.html">
+              <picture>
+               <img src="images/bountifulfoods.png" alt="bountiful foods logo" loading="lazy">
+              </picture> </a>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
@@ -30,24 +31,29 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <form method="get">
+    <main class="fresh">
+      <picture>
+            <img src="images/groupsmoothie.jpg" alt="group of smoothies together" loading="lazy">
+          </picture>
+        <form method="get" class="freshForm">
+          
             <fieldset>
                 <legend>Drink Maker</legend>
-                  <label class="top">First Name* <input type="text" name="fname" required></label> 
+                <p> Your Information</p>
+                  <label class="top"><input type="text" name="fname" placeholder="&#9787; First Name*" required class="fname"></label> 
                   
-                  <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                  <label class="top">Phone Number* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <legend>Fruit Selection</legend>
-                <label class="top"> Option #1<select name="subject" class="dropDown">
+                  <label class="top"><input type="email" name="email" placeholder="&#9993; Email*" required class="email"></label>
+                  <label class="top"> <input type="tel" name="phone" placeholder="&phone; Phone Number*" class="phoneNum"></label>
+                <p>Fruit Selection</p>
+                <label class="top"> <select name="subject" class="dropDown fruitSelection">
                     <option value="">Select 1</option>       
                 </select></label>
 
-                <label class="top"> Option #2 <select name="subject" class="dropDown2">
+                <label class="top"> <select name="subject" class="dropDown2 fruitSelection">
                     <option value="">Select 1</option>       
                 </select></label>
 
-                <label class="top"> Option #3 <select name="subject" class="dropDown3">
+                <label class="top">  <select name="subject" class="dropDown3 fruitSelection">
                     <option value="">Select 1</option>       
                 </select></label>
 
@@ -56,24 +62,28 @@
                 <p>Any special Instructions </p>
                 
                 <label>
-                <textarea name="description" rows="4" cols="40"></textarea>
+                <textarea name="description" rows="4" cols="40" class="specialIns"></textarea>
                 </label>
             </fieldset>
     
     
             <input type="submit" value="Create my Drink" class="submitBtn">
+
+
     
         </form>
         
     </main>
     <footer>
-      <picture>
-        <a href="index.html"> <img src="images/bountifulfoods.png" alt="bountiful foods logo" loading="lazy"> </a>
-    </picture>
+      <a href="index.html">
+        <picture>
+         <img src="images/bountifulfoods.png" alt="bountiful foods logo" loading="lazy">
+        </picture> </a>
       <p id="last-update">Last Updated:</p>
     </footer>
 	<script src="scripts/updated.js"></script>
     <script src="scripts/nav.js"></script>
+    <script src="scripts/formcontent.js"></script>
     <script src="scripts/form.js"></script>
 
   </body>
