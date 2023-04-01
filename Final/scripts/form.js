@@ -26,5 +26,7 @@ submitBtn.addEventListener("click", () => {
     text1.textContent = `Hello ${firstName}! contact: ${emailText}. Fruits: ${fruit1}, ${fruit2}, and ${fruit3}. Follow: ${instr}. `;
 
     freshPage.appendChild(text1);
+
+    localStorage.setItem('formSubmissions', parseInt(localStorage.getItem('formSubmissions')));
   
 })
