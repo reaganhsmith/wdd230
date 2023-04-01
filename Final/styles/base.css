@@ -72,10 +72,11 @@ nav ul li a{
 nav ul li a:hover{
     font-weight: 400;
     background-color: var(--green);
+    color: var(--blue);
 }
 
 nav ul.open{
-    display: flex;
+    display: flex;s
     position: absolute;
     top: 5em;
     right: 0;
@@ -459,10 +460,11 @@ marquee{
 }
 
 iframe{
-    width: 500px; 
-    height: 450px;
+    width: 100%; 
+    height: 550px;
     border: none;
     border-radius: 15px;
+    margin-bottom: 1rem;
 }
 
 .mapContact h2{
@@ -473,7 +475,7 @@ iframe{
     background-color: var(--pink);
     text-align: center;
     padding: 2rem;
-    margin: 1rem;
+    margin: 1rem 3rem;
 }
 
 .contactMethod h3{
