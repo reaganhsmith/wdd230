@@ -52,6 +52,10 @@
 
     /*--------MAIN SECTION--------*/
 
+    .homeGrid{
+        grid-template-rows: .8fr repeat(2, 0.5fr) 1fr;
+    }
+
     .carlsbad p{
         font-size: 30px;
     }
@@ -162,6 +166,9 @@
     }
 
 
+    .contact{
+         height: 300px;
+    }
      /*--------FORM PAGE-------*/
 
 

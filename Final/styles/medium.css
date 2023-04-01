@@ -14,12 +14,10 @@
     }
 
     /*--------Home Grid--------*/
+
     .homeGrid{
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0;
+        grid-template-rows: .5fr repeat(2, 0.5fr) .7fr;
     }
-
-
 
     /*--------Call to Action--------*/
 
@@ -82,36 +80,37 @@
 
     .arch{
         top: 3rem;
-        right: -16rem;
+        right: -30rem;
     }
 
     .drinks img{
         top: 1rem;
-        right: -21rem;
+        right: -35rem;
     }
 
     .drinks button{
         top: 27rem;
-        right: -5rem;
+        right: -37rem;
     }
 
     .drinks h3{
         top: 4rem;
-        right: -10rem;
+        right: -25rem;
         font-size: 48px;
     }
 
     .drinks h4{
         top: 1rem;
-        right: 1rem;
+        right: -10rem;
        
     }
 
     .drinks h5{
         top: 18rem; 
-        right: 3rem;
+        right: -10rem;
         font-size: 48px;
     }
+
 
     /*--------Contact us-------*/
 

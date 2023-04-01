@@ -134,7 +134,7 @@ footer img{
 
 .homeGrid{
     display: grid;
-    grid-template-rows: 1fr repeat(2, .5fr) 1.2fr .5fr;
+    grid-template-rows: .5fr repeat(2, 0.5fr) .7fr 0.5fr;
     gap: 2rem;
 }
 
