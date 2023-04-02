@@ -8,6 +8,8 @@ async function getFruitData() {
     displayfruit2(data);
     displayfruit3(data);
 
+    console.log(data[0].nutritions)
+
   }
 
 
