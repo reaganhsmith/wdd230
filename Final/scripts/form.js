@@ -15,6 +15,7 @@ const formInfo = document.querySelector('.formInfo');
 submitBtn.addEventListener("click", () => {
 
     freshForm.style.display = 'none';
+    formInfo.style.display = 'block';
   
 
     const firstName = fname.value;
@@ -28,8 +29,8 @@ submitBtn.addEventListener("click", () => {
 
     const instr = specialInstructions.value;
 
-    const text1 = document.createElement('p');
-    text1.textContent = `Thank you ${firstName} for your order! We will contact you at ${yourEmail} and ${yourPhone} when your drink is ready.
+    const yourInfo = document.createElement('p');
+    yourInfo.textContent = `Thank you ${firstName} for your order! We will contact you at ${yourEmail} and ${yourPhone} when your drink is ready.
     We will make sure to follow these instructions: ${instr}.`;
 
     smoothieDetails = document.createElement('p');
@@ -42,7 +43,6 @@ submitBtn.addEventListener("click", () => {
         function fruitInfo(fruitName){
         const index = data.findIndex(fruit => fruit.name === fruitName);
         const fruitNut = data[index].nutritions;
-        console.log(fruitNut);
         }
 
         fruitInfo(fruit1);
@@ -85,7 +85,7 @@ submitBtn.addEventListener("click", () => {
 
 
 
-    formInfo.appendChild(text1);
+    formInfo.appendChild(yourInfo);
     formInfo.appendChild(smoothieDetails);
 
 
@@ -106,9 +106,10 @@ submitBtn.addEventListener("click", () => {
          fruitChoice2.value = " ";
          fruitChoice3.value = " ";
          specialInstructions.value = " ";
-         formP.style.display = 'none';
+         formInfo.style.display = 'none';
 
-         formInfo.value = " ";
+        smoothieDetails.textContent = " ";
+        yourInfo.textContent = " "
 
 
          
