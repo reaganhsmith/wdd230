@@ -8,12 +8,14 @@ async function getFruitData() {
     displayfruit2(data);
     displayfruit3(data);
 
-    console.log(data[0].nutritions)
 
+
+    
   }
 
 
   getFruitData();
+  
 
 
 
@@ -26,6 +28,10 @@ async function getFruitData() {
 
         option.textContent = `${fruit.name}`;
         dropDown.appendChild(option);
+
+        
+
+
     })}
 
 
