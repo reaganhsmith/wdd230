@@ -141,11 +141,13 @@
         margin: 2rem 2rem;
      }
 
-     .freshForm{
+     .freshForm, .formInfo{
         margin: 0 0 1rem 0;
         grid-row: 2 / span 1;
         border-radius: 0 0 20px 20px;
      }
+
+     
 
 
      /*--------ABOUT PAGE--------*/

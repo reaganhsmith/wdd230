@@ -10,7 +10,7 @@ const freshForm = document.querySelector('.freshForm');
 const formInfo = document.querySelector('.formInfo');
 
 
-
+formInfo.style.display = 'none';
 
 submitBtn.addEventListener("click", () => {
 
@@ -57,11 +57,11 @@ submitBtn.addEventListener("click", () => {
 
     for (let i = 0; i < data.length; i++) {
         if (data[i].name === fruit1 || data[i].name === fruit2 || data[i].name === fruit3) {
-          totalCalories += data[i].nutritions.calories;
-          totalCarbs += data[i].nutritions.carbohydrates;
-          totalFats += data[i].nutritions.fats;
-          totalProtien += data[i].nutritions.protien;
-          totalSugar += data[i].nutritions.sugar;
+          totalCalories += Math.ceil(data[i].nutritions.calories);
+          totalCarbs += Math.ceil(data[i].nutritions.carbohydrates);
+          totalFats += Math.ceil(data[i].nutritions.fats);
+          totalProtien += Math.ceil(data[i].nutritions.protien);
+          totalSugar += Math.ceil(data[i].nutritions.sugar);
 
           if(isNaN(totalFats) || isNaN(totalProtien)){
             totalFats = 0;
@@ -76,13 +76,7 @@ submitBtn.addEventListener("click", () => {
 
     }
 
-    
-
     getFruitAmount();
-
-
-
-
 
 
     formInfo.appendChild(yourInfo);

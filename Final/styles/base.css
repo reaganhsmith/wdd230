@@ -179,6 +179,8 @@ footer img{
     text-transform: uppercase;
     top: 17rem;
     right: 1rem;
+    z-index: 1;
+    cursor: pointer;
 }
 .cta button:hover, .drinks button:hover{
     background-color: var(--blue);
@@ -340,10 +342,20 @@ padding:  0 1rem;
     border-radius: 20px;
 }
 
-.freshForm p{
+.formInfo{
+    background-color: var(--pink);
+    border-radius: 0 20px 20px 0;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.freshForm p, .formInfo p{
     margin-left: 1rem;
-    font-size: 24px;
-    
+    font-size: 24px;   
+}
+
+.formInfo p{
+    font-weight: 200px;
 }
 
 .fresh img{
