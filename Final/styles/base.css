@@ -458,12 +458,26 @@ textarea{
 
 
 
-marquee{
-    font-size: 24px;
+.facts{
     background-color: var(--orange);
-    padding: 1rem;
-    word-spacing: 5rem;
+    color: var(--blue);
+    overflow: hidden;
 }
+
+.facts h2{
+    word-spacing: 2rem;
+    font-size: 15px;
+    animation:17s linear infinite rightToLeft;
+}
+
+@keyframes rightToLeft {
+    0% {
+      transform: translateX(1500px);
+    }
+    100% {
+      transform: translateX(-500px);
+    }
+  }
 
 /*-------Map and contact-------*/
 
